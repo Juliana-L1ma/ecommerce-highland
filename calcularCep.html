@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body onload="promocao()">
+    <h1>Simulação de frete</h1>
+
+    <a href="tabelaFrete.html">Clique para ver a tabela de frete completa</a>
+    <br>
+    <form>
+    <label>Calcular frete</label>
+
+    <form>
+        <fieldset>
+            <div class="alinhar">
+            <label class="label-cep" for="cep">CEP:</label>
+            <input class="input-cep" type="text" id="cep">
+            </div>
+
+        <button type="button" onclick="calcularFrete()">Calcular</button>
+        <br>
+        <div id="rua"></div>
+        <div id="bairro"></div>
+        <div id="cidade"></div>
+        <div id="estado"></div><br>
+        <div id="valorFrete"></div>
+        </fieldset>
+           
+    </form>
+</form>
+</body>
+
+<script src="scriptCep.js"></script>
+
+</html>
