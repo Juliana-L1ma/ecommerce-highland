@@ -1,13 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Index protótipo</title>
+    <style>
+        /*----------------------tags para o estilo do header----------------------------*/
+
+        header {
+            background-color: #00AC7C;
+        }
+
+        .bg-body-tertiary {
+            padding: 20px;
+
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            font-size: 1.5em;
+            color: rgb(100, 67, 67);
+        }
+
+        .form-control {
+            width: 400px;
+        }
+
+        .container-fluid {
+            margin-left: 10%;
+        }
+
+        /*---------------------------tags para estilo do corrossel do banner---------------*/
+        #carouselExampleAutoplaying {
+            margin-top: 2%;
+            background-color: #00AC7C;
+            align-items: center;
+        }
+
+        .control-banner-prev,
+        .control-banner-next {
+            background-color: #00AC7C;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }
+
+        .control-banner-prev {
+            margin-left: 10%;
+        }
+
+        .control-banner-next {
+            margin-right: 10%;
+        }
+
+        .d-block {
+            width: 500px;
+        }
+
+        /*-----------tags para o estilo do carrossel de produtos da página home-------------------*/
+        #carouselExample {
+            margin-top: 20%;
+        }
+
+        .alinhar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .control-prev-produto,
+        .control-next-produto {
+            margin-top: 5%;
+            background-color: #00AC7C;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }
+
+        .control-prev-produto {
+            margin-left: 10%;
+        }
+
+        .control-next-produto {
+            margin-right: 10%;
+        }
+
+        /*---------------------tags para estilo dos card de produtos da home-------------------*/
+        .card {
+            width: 11.875em;
+            height: 16.5em;
+            box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 120ms;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            padding: 0.5em;
+            padding-bottom: 3.4em;
+        }
+
+        .card::after {
+            content: "Add to Cart";
+            padding-top: 1.25em;
+            padding-left: 1.25em;
+            position: absolute;
+            left: 0;
+            bottom: -60px;
+            background: #00AC7C;
+            color: #fff;
+            height: 2.5em;
+            width: 100%;
+            transition: all 80ms;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .card.title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            position: absolute;
+            left: 0.625em;
+            bottom: 1.875em;
+            font-weight: 400;
+        }
+
+        .card .price {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 0.9em;
+            position: absolute;
+            left: 0.625em;
+            bottom: 0.625em;
+        }
+
+        .card:hover::after {
+            bottom: 0;
+        }
+
+        .card:active {
+            transform: scale(0.98);
+        }
+
+        .card::after {
+            content: "Ir ao produto";
+            height: 3.125em;
+        }
+
+        .text {
+            max-width: 55px;
+        }
+
+        .image {
+            background: rgb(241, 241, 241);
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+        }
+        /*-------------------------tags para footer---------------*/
+        footer{
+            background-color: #00AC7C;
+
+        }
+        .text-center{
+            margin-top: 10%;
+        }
+    </style>
 </head>
+
 <body>
-    <a href="calcularCep.html">CEP Frete</a>
-    <a href="dolarcalculo.html">Dólar calculo</a>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <img src="..." class="logo">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="calcularCep.html">CEP Frete | </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="dolarcalculo.html">Dólar calculo | </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Perfil
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Minha conta</a></li>
+                                <li><a class="dropdown-item" href="#">Carrinho</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev control-banner-prev" type="button"
+                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next control-banner-next" type="button"
+                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <div id="carouselExample" class="carousel slide">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="alinhar">
+                        <div class="card">
+                            <div class="image"><span class="text">This is a chair.</span></div>
+                            <h2 class="title">Cool Chair</h2>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="card">
+                            <div class="image"><span class="text">This is a chair.</span></div>
+                            <h2 class="title">Cool Chair</h2>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="card">
+                            <div class="image"><span class="text">This is a chair.</span></div>
+                            <h2 class="title">Cool Chair</h2>
+                            <span class="price">$100</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+
+                    <div class="alinhar">
+                        <div class="card">
+                            <div class="image"><span class="text">This is a chair.</span></div>
+                            <h2 class="title">Cool Chair</h2>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="card">
+                            <div class="image"><span class="text">This is a chair.</span></div>
+                            <h2 class="title">Cool Chair</h2>
+                            <span class="price">$100</span>
+                        </div>
+                        <div class="card">
+                            <div class="image"><span class="text">This is a chair.</span></div>
+                            <h2 class="title">Cool Chair</h2>
+                            <span class="price">$100</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="botoes-carrosel">
+                <button class="carousel-control-prev control-prev-produto" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next control-next-produto" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="banner-fixo">
+
+        </div>
+
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="container text-center">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-2">
+                coluna 1
+              </div>
+              <div class="col-md-auto">
+                coluna 2
+              </div>
+              <div class="col col-lg-2">
+                coluna 3
+              </div>
+            </div>
+          
+          </div>
+
+    </footer>
 </body>
+
 </html>
