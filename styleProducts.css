@@ -1,0 +1,298 @@
+body {
+    margin: 0 auto;
+    background-color: #f7efe5;
+}
+
+
+/*-----------------------------tags para o header------------------------*/
+#header {
+    box-sizing: border-box;
+    height: 120px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bg-body-tertiary {
+    padding: 20px;
+
+    margin: 0 auto;
+    width: 80%;
+}
+
+.navbar-brand,
+.nav-link {
+    font-size: 1.5em;
+    color: rgb(100, 67, 67);
+}
+
+.form-control {
+    width: 400px;
+}
+
+.container-fluid {
+    margin-left: 10%;
+}
+.input {
+    background-color: #ffffff;
+    max-width: 190px;
+    height: 40px;
+    padding: 10px;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+
+
+}
+
+
+.logoo {
+    width: 10%;
+    margin-top: 3%;
+}
+
+#menu {
+    margin-top: 6%;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+
+}
+
+#menu a {
+
+    display: block;
+    padding: 2.0rem;
+    color: #ffc550;
+    text-decoration: none;
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+
+
+}
+
+#menu a:hover {
+
+    transition: 1s;
+    color: #ffffff;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.input:focus {
+    color: rgb(0, 255, 255);
+
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+.button-name {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.button-name:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-name:hover {
+    box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-name:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+#cor {
+    background-color: #ffffff;
+}
+
+#cor2 {
+    background-color: #ffffff;
+}
+
+#cor3 {
+    background-color: #ffffff;
+}
+
+#cor4 {
+    background-color: #ffffff;
+}
+
+
+ /*---------------------------tags geral para estilo dos banners de produtos---------------*/
+ .carousel-products{
+    margin: 0 auto;
+    width: 80%;
+  }
+  /*-----------tags para o estilo do carrossel de produtos da página home usável para os produtos também-------------------*/
+  .alinhar {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .control-prev-produto,
+  .control-next-produto {
+    margin-top: 12%;
+    background-color: #00AC7C;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+
+  .control-prev-produto {
+    margin-left: 10%;
+  }
+
+  .control-next-produto {
+    margin-right: 10%;
+  }
+
+  /*-----------------------css do segundo banner de produtos-----------------------*/
+  .secondCarousel{
+    margin-top: 15%;
+    width: 80%;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    background-color: #00AC7C;
+    margin-top: 12%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  .carousel-control-next{
+    margin-right: 10%;
+  }
+  .carousel-control-prev{
+    margin-left: 10%;
+  }
+  .bannerProducts1,
+  .bannerProducts2{
+    background-color: #0f7457;
+  }
+
+
+  /*---------------------tags para estilo dos card de produtos-------------------*/
+  .card {
+    width: 350px;
+    height: 420px;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+}
+
+.card::after {
+    content: "Add to Cart";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #00AC7C;
+    color: #fff;
+    height: 2.5em;
+    width: 100%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 400;
+}
+
+.card .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+}
+
+.card:hover::after {
+    bottom: 0;
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.card::after {
+    content: "Ir ao produto";
+    height: 3.125em;
+}
+
+.text {
+    max-width: 55px;
+}
+
+.image {
+    /* background: rgb(241, 241, 241); */
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.imagensCard {
+    width: 100%;
+    height: 90%;
+}
+
+  /*-------------------------tags para footer---------------*/
+  footer {
+    background-color: #00AC7C;
+
+  }
+
+  .text-center {
+    margin-top: 10%;
+  }
