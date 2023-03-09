@@ -2,22 +2,19 @@
     "sabonete":{
         "nome": "Sabonete corporal limpa e perfuma - vegano, ",
         "id": "6398",
-        "valor": 7.00,
-        "image": "<img src='' width='200px'>"
+        "valor": 7.00
     },
 
     "shampoo":{
         "nome": "Shampoo em barra limpeza profunda",
         "id": "1452",
-        "valor": 12.00,
-        "image": "<img src='' width='200px'>"
+        "valor": 12.00
     },
 
     "condicionador":{
         "nome": "condicionador em barra de coco vegano hidratante - 40g",
         "id": "9874",
-        "valor": 13.00,
-        "image": "<img src='' width='200px'>"
+        "valor": 13.00
     },
 
     "kit1":{
@@ -36,6 +33,27 @@
     "oleo":{
         "nome": "Óleo de malaleuca para a pele - 100g",
         "id": "1234",
+        "valor": 11.00,
+        "image": "<img src='' width='200px'>"
+    },
+
+    "kit2":{
+        "nome": "descrição kit2",
+        "id": "1111",
+        "valor": 11.00,
+        "image": "<img src='' width='200px'>"
+    },
+
+    "essencia":{
+        "nome": "descrição essencia",
+        "id": "2211",
+        "valor": 11.00,
+        "image": "<img src='' width='200px'>"
+    },
+
+    "escova":{
+        "nome": "Descricao escova",
+        "id": "3534",
         "valor": 11.00,
         "image": "<img src='' width='200px'>"
     }
