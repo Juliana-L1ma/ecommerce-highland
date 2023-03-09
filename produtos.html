@@ -15,35 +15,56 @@
 </head>
 
 <body>
-    <header id="header">
-        <img 
-        class="logoo"
-          src="imagens/logo.png"
-    
-        />
-        <nav id="nav">
-          <button
-            aria-label="Abrir Menu"
-            id="btn-mobile"
-            aria-haspopup="true"
-            aria-controls="menu"
-            aria-expanded="false"
-          >
-            Menu
-            <span id="hamburger"></span>
-          </button>
+  <header id="header">
+    <img 
+    class="logoo"
+      src="imagens/logo.png"
+
+    />
+    <img 
+    class="logo2"
+      src="imagens/logo2.png"
+
+    />
+    <nav id="nav">
+      <button
+        aria-label="Abrir Menu"
+        id="btn-mobile"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        Menu
+        <span id="hamburger"></span>
+      </button>
 
 
-          
-          <ul id="menu" role="menu">
-            <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
-            <li> <a href="produtos.html" data-menu="CEP">PRODUTOS</a></li>
-            <li> <a href="sobre.html">SOBRE NÓS</a></li>
+      
+      <ul id="menu" role="menu">
+
        
-          
-          </ul>
-        </nav>
-      </header>
+        <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+        <li> <a href="produtos.html" data-menu="CEP">PRODUTOS</a></li>
+        <li> <a href="sobre.html">SOBRE NÓS</a></li>
+
+        <form>
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Type your text">
+                <button type="submit" class="search__button">
+                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                        <g>
+                            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </form>
+     
+   
+      
+      </ul>
+    </nav>
+  </header>
   <main>
 
     <div class="bannerProducts1">
@@ -58,21 +79,26 @@
           <div class="alinhar">
             <div class="card">
               <div class="image"><img class="imagensCard" src="imagens/card1.jpg" alt=""></div>
-              <h2 class="title">Cool Chair</h2>
-              <span class="price dolar">$100</span>
-              <span class="real">$100</span>
+              <h6 class="title" id="nomeProduto1"></h6>
+              <span class="id" id="id"></span>
+              <span class="real" id="valorRealProduto1"></span>
+              <span class="price dolar" id="valorDolarProduto1"></span>
             </div>
+
             <div class="card">
               <div class="image"><img class="imagensCard" src="imagens/card1.jpg" alt=""></div>
-              <h2 class="title">Cool Chair</h2>
-              <span class="price dolar">$100</span>
-              <span class="real">$100</span>
+              <h6 class="title" id="nomeProduto2"></h6>
+              <span class="id" id="id2"></span>
+              <span class="real" id="valorRealProduto2"></span>
+              <span class="price dolar" id="valorDolarProduto2"></span>
             </div>
+
             <div class="card">
               <div class="image"><img class="imagensCard" src="imagens/card1.jpg" alt=""></div>
-              <h2 class="title">Cool Chair</h2>
-              <span class="price dolar">$100</span>
-              <span class="real">$100</span>
+              <h6 class="title" id="nomeProduto3"></h6>
+              <span class="id" id="id3"></span>
+              <span class="real" id="valorRealProduto3"></span>
+              <span class="price dolar" id="valorDolarProduto3"></span>
             </div>
 
           </div>
@@ -127,20 +153,28 @@
           <div class="alinhar">
             <div class="card">
               <div class="image"><img class="imagensCard" src="imagens/card1.jpg" alt=""></div>
-              <h2 class="title">Cool Chair</h2>
-              <span class="price dolar">$100</span>
-              <span class="real">$100</span>
+              <h6 class="title" id="nomeProduto4"></h6>
+              <span class="id" id="id4"></span>
+              <span class="real" id="valorRealProduto4"></span>
+              <span class="price dolar" id="valorDolarProduto4"></span>
             </div>
-            <div class="card">
+
+
+              <div class="card">
               <div class="image"><img class="imagensCard" src="imagens/card1.jpg" alt=""></div>
-              <h2 class="title">Cool Chair</h2>
-              <span class="price">$100</span>
+              <h6 class="title" id="nomeProduto5"></h6>
+              <span class="id" id="id5"></span>
+              <span class="real" id="valorRealProduto5"></span>
+              <span class="price dolar" id="valorDolarProduto5"></span>
             </div>
-            <div class="card">
+
+
+             <div class="card">
               <div class="image"><img class="imagensCard" src="imagens/card1.jpg" alt=""></div>
-              <h2 class="title">Cool Chair</h2>
-              <span class="price dolar">$100</span>
-              <span class="real">$100</span>
+              <h6 class="title" id="nomeProduto6"></h6>
+              <span class="id" id="id6"></span>
+              <span class="real" id="valorRealProduto6"></span>
+              <span class="price dolar" id="valorDolarProduto6"></span>
             </div>
 
           </div>
@@ -230,5 +264,5 @@
 
   </footer>
 </body>
-
+<script src="scriptProdutos.js"></script>
 </html>
