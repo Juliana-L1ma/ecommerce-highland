@@ -15,10 +15,22 @@ body{
             font-size: 1.5em;
             color: rgb(100, 67, 67);
         }
+        .carousel-item{
+            height: 620px;
+          }
 
         .form-control {
             width: 400px;
         }
+        #imgs1{
+            height: 100%;
+          }
+          #imgs2{
+            height: 100%;
+          }
+          #imgs3{
+            height: 100%;
+          }
 
         .container-fluid {
             margin-left: 10%;
@@ -53,7 +65,7 @@ body{
 
         /*-----------tags para o estilo do carrossel de produtos da página home-------------------*/
         #carouselExample {
-            margin-top: 10%;
+            margin-top: 5%;
         }
 
         .alinhar {
@@ -166,84 +178,6 @@ body{
 
 
 
-        /* header */
-
-
-
-
-
-
-
-
-
-
-
-
-          .button-name {
-            align-items: center;
-            appearance: none;
-            background-color: #FCFCFD;
-            border-radius: 4px;
-            border-width: 0;
-            box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-            box-sizing: border-box;
-            color: #36395A;
-            cursor: pointer;
-            display: inline-flex;
-            font-family: "JetBrains Mono",monospace;
-            height: 48px;
-            justify-content: center;
-            line-height: 1;
-            list-style: none;
-            overflow: hidden;
-            padding-left: 16px;
-            padding-right: 16px;
-            position: relative;
-            text-align: left;
-            text-decoration: none;
-            transition: box-shadow .15s,transform .15s;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: manipulation;
-            white-space: nowrap;
-            will-change: box-shadow,transform;
-            font-size: 18px;
-           }
-           
-           .button-name:focus {
-            box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-           }
-           
-           .button-name:hover {
-            box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-            transform: translateY(-2px);
-           }
-           
-           .button-name:active {
-            box-shadow: #D6D6E7 0 3px 7px inset;
-            transform: translateY(2px);
-           }
-
-
-
-
-           #cor{
-            background-color: #ffffff;
-           }
-
-           #cor2{
-            background-color: #ffffff;
-           }
-
-           #cor3{
-            background-color: #ffffff;
-           }
-           #cor4{
-            background-color: #ffffff;
-           }
-
-
-        /* Fim header */
 
 
         /* main */
@@ -279,35 +213,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         #header {
             box-sizing: border-box;
             height: 120px;
@@ -323,10 +228,10 @@ body{
          }
           
           
-          
           .logoo{
             width: 9%;
             margin-top: 3%;
+            margin-left: 3%;
           }
           
           #menu {
@@ -341,10 +246,10 @@ body{
             
             display: block;
             padding: 2.0rem;
-            color: #ffc550;
+            color: #0b3800;
             text-decoration: none;
             font-family: 'Antonio', sans-serif;
-            font-size: 20px;
+            font-size: 26px;
           
             
           }
@@ -352,7 +257,7 @@ body{
           #menu a:hover{
           
             transition: 1s;
-            color: #ffffff;
+            color: #008031e3;
           }
           
           #btn-mobile {
@@ -436,7 +341,7 @@ body{
             }
             .logo2{
                 display: block;
-                width: 20%;
+                width: 30%;
               
              }
              .logoo{
@@ -448,11 +353,39 @@ body{
               }
           
               .search__button{
-                display: none;
-              
+                width: 10%;
+                border-radius: 100%;
               }
-          
-            
+              .carousel-item{
+                height: 290px;
+              }
+              #imgs1{
+                height: 100%;
+              }
+              #imgs2{
+                height: 100%;
+              }
+              #imgs3{
+                height: 100%;
+              }
+
+
+              /* Cards ---------------------------------*/
+
+              #carouselExample {
+                margin-top: 15%;
+            }
+
+          .card{
+            height: 250px;
+            margin: 2%;
+          }
+          .card::after{
+            height: 70px;
+          }
+      
+
+        
        
          
           }
@@ -466,6 +399,8 @@ body{
             align-items: center;
             justify-content: space-between;
             text-align: center;
+            margin-top: 25px;
+            margin-right: 15px;
           
           }
           
@@ -483,7 +418,7 @@ body{
           }
           
           .search__input:hover, .search__input:focus {
-            box-shadow: 0 0 1em #00000013;
+            box-shadow: 0 0 1em #018844c0;
           }
           
           .search__input:focus {
@@ -512,8 +447,9 @@ body{
           
           .search__icon {
             height: 1.3em;
-            width: 1.3em;
-            fill: #b4b4b4;
+            width: 1.0em;
+            fill: #b4b4b493;
+            
           }
         /*Barra de Pesquisa Fim*/
 
