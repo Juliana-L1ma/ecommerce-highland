@@ -1,158 +1,3 @@
-body {
-    margin: 0 auto;
-    background-color: #f7efe5;
-}
-
-
-/*-----------------------------tags para o header------------------------*/
-#header {
-    box-sizing: border-box;
-    height: 120px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.bg-body-tertiary {
-    padding: 20px;
-
-    margin: 0 auto;
-    width: 80%;
-}
-
-.navbar-brand,
-.nav-link {
-    font-size: 1.5em;
-    color: rgb(100, 67, 67);
-}
-
-.form-control {
-    width: 400px;
-}
-
-.container-fluid {
-    margin-left: 10%;
-}
-.input {
-    background-color: #ffffff;
-    max-width: 190px;
-    height: 40px;
-    padding: 10px;
-    /* text-align: center; */
-    border: 2px solid white;
-    border-radius: 5px;
-    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
-
-
-}
-
-
-.logoo {
-    width: 10%;
-    margin-top: 3%;
-}
-
-#menu {
-    margin-top: 6%;
-    display: flex;
-    list-style: none;
-    gap: 0.5rem;
-
-}
-
-#menu a {
-
-    display: block;
-    padding: 2.0rem;
-    color: #ffc550;
-    text-decoration: none;
-    font-family: 'Antonio', sans-serif;
-    font-size: 20px;
-
-
-}
-
-#menu a:hover {
-
-    transition: 1s;
-    color: #ffffff;
-}
-
-#btn-mobile {
-    display: none;
-}
-
-.input:focus {
-    color: rgb(0, 255, 255);
-
-    outline-color: rgb(0, 255, 255);
-    box-shadow: -3px -3px 15px rgb(0, 255, 255);
-    transition: .1s;
-    transition-property: box-shadow;
-}
-
-.button-name {
-    align-items: center;
-    appearance: none;
-    background-color: #FCFCFD;
-    border-radius: 4px;
-    border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px, rgba(45, 35, 66, 0.15) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-    box-sizing: border-box;
-    color: #36395A;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: "JetBrains Mono", monospace;
-    height: 48px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
-    padding-left: 16px;
-    padding-right: 16px;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s, transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow, transform;
-    font-size: 18px;
-}
-
-.button-name:focus {
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-}
-
-.button-name:hover {
-    box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-    transform: translateY(-2px);
-}
-
-.button-name:active {
-    box-shadow: #D6D6E7 0 3px 7px inset;
-    transform: translateY(2px);
-}
-#cor {
-    background-color: #ffffff;
-}
-
-#cor2 {
-    background-color: #ffffff;
-}
-
-#cor3 {
-    background-color: #ffffff;
-}
-
-#cor4 {
-    background-color: #ffffff;
-}
-
 
  /*---------------------------tags geral para estilo dos banners de produtos---------------*/
  .carousel-products{
@@ -287,6 +132,28 @@ body {
     height: 90%;
 }
 
+/*--------------------------- estilo da página de um produto--------------*/
+.card-descricao-produto{
+    
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10%;
+    background: rgb(255, 245, 241);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .produtoedescricao{
+    display: flex;
+    flex-direction: row;
+  }
+.produto{
+    height: 200px;
+    width: 200px;
+}
+.simulacao{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
   /*-------------------------tags para footer---------------*/
   footer {
     background-color: #00AC7C;

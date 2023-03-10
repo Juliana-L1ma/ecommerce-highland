@@ -30,22 +30,45 @@ fetch('produtos.json').then(response => response.json())
      document.getElementById("id4").innerHTML = "ID do produto " + informacoes.kit1.id;
      document.getElementById("valorDolarProduto4").innerHTML =informacoes.kit1.valor;
      var valorDolarProduto4 = informacoes.kit1.valor; 
-     document.getElementById("valorDolarProduto4").innerHTML = "U$ " + valorDolarProduto1;
+     document.getElementById("valorDolarProduto4").innerHTML = "U$ " + valorDolarProduto4;
 
       /*---------------------------Produto 5 -----------------------------------*/
     document.getElementById("nomeProduto5").innerHTML = informacoes.argila.nome;
     document.getElementById("id5").innerHTML = "ID do produto " + informacoes.argila.id;
     document.getElementById("valorDolarProduto5").innerHTML =informacoes.argila.valor;
     var valorDolarProduto5 = informacoes.argila.valor; 
-    document.getElementById("valorDolarProduto5").innerHTML = "U$ " + valorDolarProduto1;
+    document.getElementById("valorDolarProduto5").innerHTML = "U$ " + valorDolarProduto5;
 
      /*---------------------------Produto 6 -----------------------------------*/
      document.getElementById("nomeProduto6").innerHTML = informacoes.oleo.nome;
      document.getElementById("id6").innerHTML = "ID do produto " + informacoes.oleo.id;
      document.getElementById("valorDolarProduto6").innerHTML =informacoes.oleo.valor;
      var valorDolarProduto6 = informacoes.oleo.valor; 
-     document.getElementById("valorDolarProduto6").innerHTML = "U$ " + valorDolarProduto1;
+     document.getElementById("valorDolarProduto6").innerHTML = "U$ " + valorDolarProduto6;
 
+       /*---------------------------Produto 7 -----------------------------------*/
+       document.getElementById("nomeProduto7").innerHTML = informacoes.kit2.nome;
+       document.getElementById("id7").innerHTML = "ID do produto " + informacoes.kit2.id;
+       document.getElementById("valorDolarProduto7").innerHTML =informacoes.kit2.valor;
+       var valorDolarProduto7 = informacoes.kit2.valor; 
+       document.getElementById("valorDolarProduto7").innerHTML = "U$ " + valorDolarProduto7;
+
+       
+         /*---------------------------Produto 8 -----------------------------------*/
+     document.getElementById("nomeProduto8").innerHTML = informacoes.essencia.nome;
+     document.getElementById("id8").innerHTML = "ID do produto " + informacoes.essencia.id;
+     document.getElementById("valorDolarProduto8").innerHTML =informacoes.essencia.valor;
+     var valorDolarProduto8 = informacoes.essencia.valor; 
+     document.getElementById("valorDolarProduto8").innerHTML = "U$ " + valorDolarProduto8;
+
+
+       /*---------------------------Produto 9 -----------------------------------*/
+       document.getElementById("nomeProduto9").innerHTML = informacoes.escova.nome;
+       document.getElementById("id9").innerHTML = "ID do produto " + informacoes.escova.id;
+       document.getElementById("valorDolarProduto9").innerHTML =informacoes.oleo.valor;
+       var valorDolarProduto9 = informacoes.escova.valor; 
+       document.getElementById("valorDolarProduto9").innerHTML = "U$ " + valorDolarProduto9;
+  
     fetch (`https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL`).then(response => {
         return response.json() })
         .then(economia => {
@@ -81,6 +104,21 @@ fetch('produtos.json').then(response => response.json())
          var convertidoValorProduto6 = valorDolarProduto6 * dolarAtual;
          var converValorProduto6 = convertidoValorProduto6.toFixed(2);
          document.getElementById("valorRealProduto6").innerHTML = "R$" + converValorProduto6;
+
+          /*---------------------------Produto 7 -----------------------------------*/
+          var convertidoValorProduto7 = valorDolarProduto7 * dolarAtual;
+          var converValorProduto7 = convertidoValorProduto7.toFixed(2);
+          document.getElementById("valorRealProduto7").innerHTML = "R$" + converValorProduto7;
+
+           /*---------------------------Produto 8 -----------------------------------*/
+         var convertidoValorProduto8 = valorDolarProduto8 * dolarAtual;
+         var converValorProduto8 = convertidoValorProduto8.toFixed(2);
+         document.getElementById("valorRealProduto8").innerHTML = "R$" + converValorProduto8;
+
+          /*---------------------------Produto 9 -----------------------------------*/
+          var convertidoValorProduto9 = valorDolarProduto9 * dolarAtual;
+          var converValorProduto9 = convertidoValorProduto9.toFixed(2);
+          document.getElementById("valorRealProduto9").innerHTML = "R$" + converValorProduto9;
 
 
         })

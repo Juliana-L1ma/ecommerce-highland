@@ -2,59 +2,62 @@
     "sabonete":{
         "nome": "Sabonete corporal limpa e perfuma - vegano, ",
         "id": "6398",
-        "valor": 7.00
+        "valor": 7.00,
+        "estoque": "Disponível"
     },
 
     "shampoo":{
         "nome": "Shampoo em barra limpeza profunda",
         "id": "1452",
-        "valor": 12.00
+        "valor": 12.00,
+        "estoque": "Disponível"
     },
 
     "condicionador":{
         "nome": "condicionador em barra de coco vegano hidratante - 40g",
         "id": "9874",
-        "valor": 13.00
+        "valor": 13.00,
+        "estoque": "Disponível"
     },
 
     "kit1":{
         "nome": "Kit beleza natural - Shampoo, condicionador e óleo corporal",
         "id": "6547",
         "valor": 24.00,
-        "image": "<img src='' width='200px'>"
+        "estoque": "Disponível"
     },
     "argila":{
         "nome": "Argila Verde - 200g",
         "id": "4312",
         "valor": 8.00,
-        "image": "<img src='' width='200px'>"
+        "estoque": "Disponível"
     },
 
     "oleo":{
         "nome": "Óleo de malaleuca para a pele - 100g",
         "id": "1234",
         "valor": 11.00,
-        "image": "<img src='' width='200px'>"
+        "estoque": "Disponível"
     },
 
     "kit2":{
         "nome": "descrição kit2",
         "id": "1111",
-        "valor": 11.00,
-        "image": "<img src='' width='200px'>"
+        "valor": 21.00,
+        "estoque": "Disponível"
     },
 
     "essencia":{
         "nome": "descrição essencia",
         "id": "2211",
-        "valor": 11.00,
-        "image": "<img src='' width='200px'>"
+        "valor": 9.00,
+        "estoque": "Disponível"
     },
 
     "escova":{
         "nome": "Descricao escova",
         "id": "3534",
-        "valor": 11.00,
-        "image": "<img src='' width='200px'>"
+        "valor": 7.00,
+        "estoque": "Disponível"
     }
 }
