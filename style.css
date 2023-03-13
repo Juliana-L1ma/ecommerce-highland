@@ -39,7 +39,6 @@ body{
         /*---------------------------tags para estilo do corrossel do banner---------------*/
         #carouselExampleAutoplaying {
             margin-top: 2%;
-            background-color: #b8a500;
             align-items: center;
         }
 
@@ -407,7 +406,7 @@ body{
           .search__input {
             font-family: inherit;
             font-size: inherit;
-            background-color: #f4f2f2;
+            background-color: #ffffff;
             border: none;
             color: #646464;
             padding: 0.7rem 1rem;
@@ -423,12 +422,12 @@ body{
           
           .search__input:focus {
             outline: none;
-            background-color: #f0eeee;
+            background-color: #ffffff;
           }
           
           .search__input::-webkit-input-placeholder {
             font-weight: 100;
-            color: #ccc;
+            color: #695151;
           }
           
           .search__input:focus + .search__button {
@@ -437,7 +436,7 @@ body{
           
           .search__button {
             border: none;
-            background-color: #f4f2f2;
+            background-color: #ffffff;
             margin-top: .1em;
           }
           
@@ -448,7 +447,7 @@ body{
           .search__icon {
             height: 1.3em;
             width: 1.0em;
-            fill: #b4b4b493;
+            fill: #000000b7;
             
           }
         /*Barra de Pesquisa Fim*/
