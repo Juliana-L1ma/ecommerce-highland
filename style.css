@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@700&display=swap');
 body{
     margin: 0 auto;
     background-color: #f7efe5;
@@ -103,22 +104,14 @@ body{
             background: #fff;
             padding: 0.5em;
             padding-bottom: 3.4em;
+            font-family: 'Ruda', sans-serif;
         }
+        .card:hover {
+          box-shadow: 0px 0px 30px 1px rgba(2, 141, 67, 0.568);
+         }
 
         .card::after {
-            content: "Add to Cart";
-            padding-top: 1.25em;
-            padding-left: 1.25em;
-            position: absolute;
-            left: 0;
-            bottom: -60px;
-            background: #00AC7C;
-            color: #fff;
-            height: 2.5em;
-            width: 100%;
-            transition: all 80ms;
-            font-weight: 600;
-            text-transform: uppercase;
+         
         }
 
         .card.title {
@@ -146,10 +139,7 @@ body{
             transform: scale(0.98);
         }
 
-        .card::after {
-            content: "Ir ao produto";
-            height: 3.125em;
-        }
+    
 
         .text {
             max-width: 55px;
@@ -164,7 +154,7 @@ body{
         }
         .imagensCard{
             width: 100%;
-            height: 90%;
+            height: 100%;
         }
         /*-------------------------tags para footer---------------*/
         footer{
@@ -375,14 +365,87 @@ body{
                 margin-top: 15%;
             }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           .card{
-            height: 250px;
+            height: 290px;
             margin: 2%;
           }
           .card::after{
             height: 70px;
           }
+          .image {
+            /* background: rgb(241, 241, 241); */
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+        }
+        .imagensCard{
+            width: 100%;
+            height: 100%;
+        }
+        #id{
+          font-size: 10px;
+        }
+        .title{
+          font-size:13px;
+          color: #00AC7C;
+          text-decoration: none;
+        }
+        #id2{
+          font-size: 10px;
+        }
+        #id3{
+          font-size: 10px;
+        }
+        #id4{
+          font-size: 10px;
+        }
+        #id5{
+          font-size: 10px;
+        }
+        #id6{
+          font-size: 10px;
+        }
+
       
+
+
+
+
+
+
+
+
+
+
+
+
 
         
        

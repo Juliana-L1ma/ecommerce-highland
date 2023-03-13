@@ -167,3 +167,15 @@
   .text-center {
     margin-top: 10%;
   }
+
+
+  @media (max-width: 1000px) {
+    .produto{
+      display: none;
+    }
+  }
+
+
+  a{
+    color: rgb(255, 0, 200);
+  }
