@@ -4,6 +4,9 @@ body{
     background-color: #f7efe5;
 }
 
+
+
+
         .bg-body-tertiary {
             padding: 20px;
 
@@ -77,7 +80,7 @@ body{
         .control-prev-produto,
         .control-next-produto {
             margin-top: 5%;
-            background-color: #00AC7C;
+            background-color: #a8a8a8c0;
             border-radius: 50%;
             height: 40px;
             width: 40px;
@@ -107,7 +110,7 @@ body{
             font-family: 'Ruda', sans-serif;
         }
         .card:hover {
-          box-shadow: 0px 0px 30px 1px rgba(2, 141, 67, 0.568);
+          box-shadow: 0px 0px 30px 1px rgba(0, 175, 82, 0.575);
          }
 
         .card::after {
@@ -156,6 +159,7 @@ body{
             width: 100%;
             height: 100%;
         }
+        
         /*-------------------------tags para footer---------------*/
         footer{
             background-color: #00AC7C;
@@ -256,202 +260,6 @@ body{
 
 
 
-          
-          @media (max-width: 1000px) {
-            #menu {
-                display: block;
-                position: absolute;
-                width: 100%;
-                top: 70px;
-                right: 0px;
-                background: #f7e7d1;
-                transition: 0.6s;
-                z-index: 1000;
-                height: 0px;
-                visibility: hidden;
-                overflow-y: hidden;
-              
-            }
-       
-        
-          
-            #nav.active #menu {
-                height: calc(100vh - 70px);
-                visibility: visible;
-                overflow-y: auto;
-            }
-          
-            #menu a {
-                padding: 1rem 0;
-                margin: 0 1rem;
-                border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-                color: #332915;
-             
-            }
-          
-            #btn-mobile {
-                display: flex;
-                padding: 0.5rem 1rem;
-                font-size: 1rem;
-                border: none;
-                background: none;
-                cursor: pointer;
-                gap: 0.5rem;
-            }
-          
-            #hamburger {
-                border-top: 2px solid;
-                width: 20px;
-            }
-          
-            #hamburger::after,
-            #hamburger::before {
-                content: '';
-                display: block;
-                width: 20px;
-                height: 2px;
-                background: currentColor;
-                margin-top: 5px;
-                transition: 0.3s;
-                position: relative;
-            }
-          
-            #nav.active #hamburger {
-                border-top-color: transparent;
-            }
-          
-            #nav.active #hamburger::before {
-                transform: rotate(135deg);
-            }
-          
-            #nav.active #hamburger::after {
-                transform: rotate(-135deg);
-                top: -7px;
-            }
-            .logo2{
-                display: block;
-                width: 30%;
-              
-             }
-             .logoo{
-                display: none;
-             }
-             .search {
-       
-                margin-top: 10%;
-              }
-          
-              .search__button{
-                width: 10%;
-                border-radius: 100%;
-              }
-              .carousel-item{
-                height: 290px;
-              }
-              #imgs1{
-                height: 100%;
-              }
-              #imgs2{
-                height: 100%;
-              }
-              #imgs3{
-                height: 100%;
-              }
-
-
-              /* Cards ---------------------------------*/
-
-              #carouselExample {
-                margin-top: 15%;
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          .card{
-            height: 290px;
-            margin: 2%;
-          }
-          .card::after{
-            height: 70px;
-          }
-          .image {
-            /* background: rgb(241, 241, 241); */
-            width: 100%;
-            height: 100%;
-            display: grid;
-            place-items: center;
-        }
-        .imagensCard{
-            width: 100%;
-            height: 100%;
-        }
-        #id{
-          font-size: 10px;
-        }
-        .title{
-          font-size:13px;
-          color: #00AC7C;
-          text-decoration: none;
-        }
-        #id2{
-          font-size: 10px;
-        }
-        #id3{
-          font-size: 10px;
-        }
-        #id4{
-          font-size: 10px;
-        }
-        #id5{
-          font-size: 10px;
-        }
-        #id6{
-          font-size: 10px;
-        }
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-       
-         
-          }
-
 
           /*Barra de Pesquisa Começo*/
 
@@ -518,5 +326,261 @@ body{
 
 
 
+        /* Banner2 */
 
+
+        .banner2{
+          width: 80%;
+     
+          margin: 0 auto;
+          border: none;
+          margin-top: -10%;
+        }
+        .banner2img{
+          width: 100%;
+        }
+
+
+
+
+
+        /* Footer */
+
+        footer{
+          background-color: #ddd4cb
+        }
+        .pLogo{
+   
+          width: 100%;
+      
+        }
+        .pLogoimg{
+          width: 70%;
+          margin-right: 50%;
+        }
+        .textoFotter{
+          font-family: 'Antonio', sans-serif;
+          font-size: 22px;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+        @media (max-width: 1000px) {
+          #menu {
+              display: block;
+              position: absolute;
+              width: 100%;
+              top: 70px;
+              right: 0px;
+              background: #f7e7d1;
+              transition: 0.6s;
+              z-index: 1000;
+              height: 0px;
+              visibility: hidden;
+              overflow-y: hidden;
+            
+          }
+     
+      
         
+          #nav.active #menu {
+              height: calc(100vh - 70px);
+              visibility: visible;
+              overflow-y: auto;
+          }
+        
+          #menu a {
+              padding: 1rem 0;
+              margin: 0 1rem;
+              border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+              color: #332915;
+           
+          }
+        
+          #btn-mobile {
+              display: flex;
+              padding: 0.5rem 1rem;
+              font-size: 1rem;
+              border: none;
+              background: none;
+              cursor: pointer;
+              gap: 0.5rem;
+          }
+        
+          #hamburger {
+              border-top: 2px solid;
+              width: 20px;
+          }
+        
+          #hamburger::after,
+          #hamburger::before {
+              content: '';
+              display: block;
+              width: 20px;
+              height: 2px;
+              background: currentColor;
+              margin-top: 5px;
+              transition: 0.3s;
+              position: relative;
+          }
+        
+          #nav.active #hamburger {
+              border-top-color: transparent;
+          }
+        
+          #nav.active #hamburger::before {
+              transform: rotate(135deg);
+          }
+        
+          #nav.active #hamburger::after {
+              transform: rotate(-135deg);
+              top: -7px;
+          }
+          .logo2{
+              display: block;
+              width: 30%;
+            
+           }
+           .logoo{
+              display: none;
+           }
+           .search {
+     
+              margin-top: 10%;
+            }
+        
+            .search__button{
+              width: 10%;
+              border-radius: 100%;
+            }
+            .carousel-item{
+              height: 290px;
+            }
+            #imgs1{
+              height: 100%;
+            }
+            #imgs2{
+              height: 100%;
+            }
+            #imgs3{
+              height: 100%;
+            }
+
+
+            /* Cards ---------------------------------*/
+
+            #carouselExample {
+              margin-top: 15%;
+          }
+
+
+
+
+
+        .card{
+       
+          height: 280px;
+          margin: 2%;
+        }
+        .carouselExample{
+
+          height: 200px;
+        }
+        .card::after{
+          height: 70px;
+        }
+        .image {
+          /* background: rgb(241, 241, 241); */
+          width: 100%;
+          height: 100%;
+          display: grid;
+          place-items: center;
+      }
+      .imagensCard{
+          width: 100%;
+          height: 100%;
+      }
+      #id{
+        font-size: 10px;
+      }
+      .title{
+        font-size:13px;
+        color: #00AC7C;
+        text-decoration: none;
+      }
+      #id2{
+        font-size: 10px;
+      }
+      #id3{
+        font-size: 10px;
+      }
+      #id4{
+        font-size: 10px;
+      }
+      #id5{
+        font-size: 10px;
+      }
+      #id6{
+        font-size: 10px;
+      }
+      .image {
+        /* background: rgb(241, 241, 241); */
+        width: 100%;
+        height: 80%;
+        display: grid;
+        place-items: center;
+    }
+    .imagensCard{
+        width: 100%;
+        height: 80%;
+    }
+    .banner2{
+      margin-top: -10%;
+    }
+
+    .textoFotter{
+      font-family: 'Antonio', sans-serif;
+      font-size: 16px;
+
+    }
+
+ 
+
+
+
+
+
+        }
