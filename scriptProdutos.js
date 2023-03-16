@@ -65,10 +65,33 @@ fetch('produtos.json').then(response => response.json())
        /*---------------------------Produto 9 -----------------------------------*/
        document.getElementById("nomeProduto9").innerHTML = informacoes.escova.nome;
        document.getElementById("id9").innerHTML = "ID do produto " + informacoes.escova.id;
-       document.getElementById("valorDolarProduto9").innerHTML =informacoes.oleo.valor;
+       document.getElementById("valorDolarProduto9").innerHTML =informacoes.escova.valor;
        var valorDolarProduto9 = informacoes.escova.valor; 
        document.getElementById("valorDolarProduto9").innerHTML = "U$ " + valorDolarProduto9;
   
+        /*---------------------------Produto 10 -----------------------------------*/
+        document.getElementById("nomeProduto10").innerHTML = informacoes.argilaRosa.nome;
+        document.getElementById("id10").innerHTML = "ID do produto " + informacoes.argilaRosa.id;
+        document.getElementById("valorDolarProduto10").innerHTML =informacoes.argilaRosa.valor;
+        var valorDolarProduto10 = informacoes.argilaRosa.valor; 
+        document.getElementById("valorDolarProduto10").innerHTML = "U$ " + valorDolarProduto10;
+
+         /*---------------------------Produto 11 -----------------------------------*/
+       document.getElementById("nomeProduto11").innerHTML = informacoes.serum.nome;
+       document.getElementById("id11").innerHTML = "ID do produto " + informacoes.serum.id;
+       document.getElementById("valorDolarProduto11").innerHTML =informacoes.serum.valor;
+       var valorDolarProduto11 = informacoes.serum.valor; 
+       document.getElementById("valorDolarProduto11").innerHTML = "U$ " + valorDolarProduto11;
+
+
+        /*---------------------------Produto 12 -----------------------------------*/
+        document.getElementById("nomeProduto12").innerHTML = informacoes.oleoEssencial.nome;
+        document.getElementById("id12").innerHTML = "ID do produto " + informacoes.oleoEssencial.id;
+        document.getElementById("valorDolarProduto12").innerHTML =informacoes.oleoEssencial.valor;
+        var valorDolarProduto12 = informacoes.oleoEssencial.valor; 
+        document.getElementById("valorDolarProduto12").innerHTML = "U$ " + valorDolarProduto12;
+
+
     fetch (`https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL`).then(response => {
         return response.json() })
         .then(economia => {
@@ -121,6 +144,20 @@ fetch('produtos.json').then(response => response.json())
           document.getElementById("valorRealProduto9").innerHTML = "R$" + converValorProduto9;
 
 
+           /*---------------------------Produto 10 -----------------------------------*/
+           var convertidoValorProduto10 = valorDolarProduto10 * dolarAtual;
+           var converValorProduto10 = convertidoValorProduto10.toFixed(2);
+           document.getElementById("valorRealProduto10").innerHTML = "R$" + converValorProduto10;
+
+            /*---------------------------Produto 11 -----------------------------------*/
+          var convertidoValorProduto11 = valorDolarProduto11 * dolarAtual;
+          var converValorProduto11 = convertidoValorProduto11.toFixed(2);
+          document.getElementById("valorRealProduto11").innerHTML = "R$" + converValorProduto11;
+
+           /*---------------------------Produto 12 -----------------------------------*/
+           var convertidoValorProduto12 = valorDolarProduto12 * dolarAtual;
+           var converValorProduto12 = convertidoValorProduto12.toFixed(2);
+           document.getElementById("valorRealProduto12").innerHTML = "R$" + converValorProduto12;
         })
 
 

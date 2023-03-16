@@ -59,5 +59,26 @@
         "id": "3534",
         "valor": 7.00,
         "estoque": "Disponível"
+    },
+
+    "argilaRosa":{
+        "nome": "argila rosa",
+        "id": "8201",
+        "valor": 8.00,
+        "estoque": "Disponível"
+    },
+
+    "serum":{
+        "nome": "Serum",
+        "id": "5327",
+        "valor": 10.00,
+        "estoque": "Disponível"
+    },
+
+    "oleoEssencial":{
+        "nome": "oleo Essencial",
+        "id": "7128",
+        "valor": 9.00,
+        "estoque": "Disponível"
     }
 }
