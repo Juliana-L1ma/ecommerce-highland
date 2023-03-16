@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Index protótipo</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+      
+
+        <a href="index.html"> 
+
+          <img 
+
+          class="logoo"
+            src="imagens/logo.png"
+            
+      
+          />
+
+
+        </a>
+        <img
+         
+        class="logo2"
+          src="imagens/logo2.png"
+    
+        />
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            Menu
+            <span id="hamburger"></span>
+          </button>
+
+
+          
+          <ul id="menu" role="menu">
+
+           
+            <li> <a href="index.html" data-menu="HOME"> HOME</a></li>
+            <li> <a href="produtos.html" data-menu="CEP">PRODUTOS</a></li>
+            <li> <a href="sobre.html">SOBRE NÓS</a></li>
+
+            <form>
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="Pesquise...">
+                    <button type="submit" class="search__button">
+                        <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                            <g>
+                                <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+         
+       
+          
+          </ul>
+        </nav>
+     
+      </header>
+
+
+    <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="imagens/banner1.png" id="imgs1" class="d-block w-100" height="700px" alt="...">
+                </div>
+                <div class="carousel-item"  data-bs-interval="2000">
+                    <img src="imagens/banner2.png" id="imgs1" class="d-block w-100" height="700px" alt="...">
+                </div>
+                <div class="carousel-item"  >
+                    <img src="imagens/banner3.png" id="imgs1" class="d-block w-100" height="700px" alt="...">
+                </div>
+            </div>
+           
+        </div>
+
+
+
+        <div id="carouselExample" class="carousel slide">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+    
+              <div class="alinhar">
+                <div class="card">
+                  <div class="image"><img class="imagensCard" src="imagens/produto1Index.png" alt=""></div>
+                  <a class="title" id="nomeProduto1" href="./produto6398.html"></a>
+                  <span class="id" id="id"></span>
+                  <span class="real" id="valorRealProduto1"></span>
+                  <span class="price dolar" id="valorDolarProduto1"></span>
+                </div>
+    
+                <div class="card">
+                  <div class="image"><img class="imagensCard" src="imagens/produto2Index.png" alt=""></div>
+                  <h6 class="title" id="nomeProduto2"></h6>
+                  <span class="id" id="id2"></span>
+                  <span class="real" id="valorRealProduto2"></span>
+                  <span class="price dolar" id="valorDolarProduto2"></span>
+                </div>
+    
+                <div class="card">
+                  <div class="image"><img class="imagensCard" src="imagens/produto3Index.png" alt=""></div>
+                  <h6 class="title" id="nomeProduto3"></h6>
+                  <span class="id" id="id3"></span>
+                  <span class="real" id="valorRealProduto3"></span>
+                  <span class="price dolar" id="valorDolarProduto3"></span>
+                </div>
+    
+    
+              </div>
+            </div>
+    
+            <div class="carousel-item">
+    
+              <div class="alinhar">
+                <div class="card">
+                  <div class="image"><img class="imagensCard" src="imagens/produtoIndex4.png" alt=""></div>
+                  <h6 class="title" id="nomeProduto4"></h6>
+                  <span class="id" id="id4"></span>
+                  <span class="real" id="valorRealProduto4"></span>
+                  <span class="price dolar" id="valorDolarProduto4"></span>
+                </div>
+    
+    
+                  <div class="card">
+                  <div class="image"><img class="imagensCard" src="imagens/produtoIndex5.png" alt=""></div>
+                  <h6 class="title" id="nomeProduto5"></h6>
+                  <span class="id" id="id5"></span>
+                  <span class="real" id="valorRealProduto5"></span>
+                  <span class="price dolar" id="valorDolarProduto5"></span>
+                </div>
+    
+    
+                 <div class="card">
+                  <div class="image"><img class="imagensCard" src="imagens/produtoIndex6.png" alt=""></div>
+                  <h6 class="title" id="nomeProduto6"></h6>
+                  <span class="id" id="id6"></span>
+                  <span class="real" id="valorRealProduto6"></span>
+                  <span class="price dolar" id="valorDolarProduto6"></span>
+                </div>
+    
+              </div>
+    
+            </div>
+    
+    
+          </div>
+
+            <div class="botoes-carrosel">
+                <button class="carousel-control-prev control-prev-produto" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next control-next-produto" type="button"
+                    data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        </div>
+
+
+
+<div class="informacoesHome">
+  <div class="bannerInfor1">
+    <img class="bannerInfor1img" src="imagens/banner4.png" alt="">
+</div>
+
+<div class="bannerInfor2">
+  <img class="bannerInfor2img" src="imagens/bannerRecicleHome.png" alt="">
+</div>
+</div>
+    
+
+<div class="avaliacao">
+  
+  <img src="./imagens/modelo.jpg" class="modelo" alt="">
+
+  
+  <div class="todasAvaliacao">
+    <h3 class="tituloAvaliacao">O que estão dizendo</h3>
+
+  <div class="caixaAvalicao">
+    <div class="infoUsuario">
+      <div class="imgEnome">  
+        <div class="imgUsuario"></div>
+      <h4 class="nomeUser">Larissa Cardoso</h4>
+    </div>
+    
+      <p class="email">larisacardoso@gmail.com</p>
+      <p class="comentario">Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Ducimus esse debitis architecto! 
+         laudantium eligendi rem accusantium earum rerum iste!<br> Compra verificada!</p>
+      <p class="estrelas">Avaliação: ⭐⭐⭐⭐⭐</p>
+    </div>
+  </div>
+
+  <div class="caixaAvalicao">
+    
+    <div class="infoUsuario">
+      <div class="imgEnome">  
+        <div class="imgUsuario"></div>
+      <h4 class="nomeUser">Letícia Santos</h4>
+    </div>
+      <p class="email">leticiasantos@gmail.com</p>
+      <p class="comentario">Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Ducimus esse debitis architecto! 
+         laudantium eligendi rem accusantium earum rerum iste!<br> Compra verificada!</p>
+         <p class="estrelas">Avaliação: ⭐⭐⭐⭐⭐</p>
+    </div>
+  </div>
+
+  <div class="caixaAvalicao">
+    
+    <div class="infoUsuario">
+      <div class="imgEnome">  
+        <div class="imgUsuario"></div>
+      <h4 class="nomeUser">Giovanna Silva</h4>
+    </div>
+      <p class="email">giovannasilva@gmail.com</p>
+      <p class="comentario">Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Ducimus esse debitis architecto! 
+         laudantium eligendi rem accusantium earum rerum iste!<br> Compra verificada!</p>
+         <p class="estrelas">Avaliação: ⭐⭐⭐⭐⭐</p>
+    </div>
+  </div>
+</div>
+</div>
+
+    </main>
+
+    <footer class="footer-sobre">
+
+      <div class="container text-center">
+          <div class="row justify-content-md-center">
+            <img  class="pLogoimg" src="imagens/logo2.png" alt="">
+
+            <div class="col col-lg-2">
+                 <b>HighLander Bionatural</b>
+                  
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur,<br>
+                  adipisicing elit.Minus odio omnis ipsum explicabo<br>
+                  aspernatur itaque exercitationem quas pariatur animi <br>
+                  dicta commodi, asperiores ex labore ut consequuntur<br>
+                  sapiente dolores corrupti eaque?
+                
+              </div>
+              
+              <div class="col-md-auto">
+                  <b>Termos e condições</b>
+                  
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur,<br>
+                  adipisicing elit.Minus odio omnis ipsum explicabo<br>
+                  aspernatur itaque exercitationem quas pariatur animi <br>
+                  dicta commodi, asperiores ex labore ut consequuntur<br>
+                  sapiente dolores corrupti eaque?
+              </div>
+              <div class="col col-lg-2">
+                <b>Contato</b>  
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur,<br>
+                  adipisicing elit.Minus odio omnis ipsum explicabo<br>
+                  aspernatur itaque exercitationem quas pariatur animi <br>
+                  dicta commodi, asperiores ex labore ut consequuntur<br>
+                  sapiente dolores corrupti eaque?
+              </div>
+          </div>
+
+      </div>
+
+  </footer>
+
+<script src="scriptProdutos.js"></script>
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+      
+      function toggleMenu(event) {
+         if (event.type === 'touchstart') event.preventDefault();
+         const nav = document.getElementById('nav');
+         nav.classList.toggle('active');
+         const active = nav.classList.contains('active');
+         event.currentTarget.setAttribute('aria-expanded', active);
+         if (active) {
+            event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+         } else {
+            event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+         }
+      }
+      
+      btnMobile.addEventListener('click', toggleMenu);
+       btnMobile.addEventListener('touchstart', toggleMenu);
+      </script>
+</body>
+
+</html>
