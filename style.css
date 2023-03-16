@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruda:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap');
 
 body {
   margin: 0 auto;
@@ -19,6 +19,9 @@ body {
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
 
 }
+a{
+  text-decoration: none;
+}
 
 .logo2 {
   display: none;
@@ -26,7 +29,7 @@ body {
 
 
 .logoo {
-  width: 9%;
+  width: 40%;
   margin-top: 3%;
   margin-left: 3%;
 }
@@ -341,18 +344,35 @@ body {
 .informacoesHome{
   display: flex;
   flex-direction: row;
+
+  text-align: center;
+
 }
 
 .bannerInfor1img {
-  padding: 5%;
+  padding-left: 28%;
+  margin: 0 auto;
   width: 800px;
   height: 400px;
 }
 .bannerInfor2img {
-  padding: 5%;
+  padding-left: 25%;
+ 
+  margin: 0 auto;
   width: 800px;
   height: 400px;
 }
+.bannerInfor1{
+  border: 2px solid black;
+
+}
+.bannerInfor2{
+  border: 2px solid black;
+
+}
+
+
+
 
 /*--------------------ESTILO DE PRODUTOS-------------*/
 .bannerfixo1{
@@ -687,6 +707,183 @@ footer {
 }
 
 
+
+
+
+/* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
+
+
+.produtoPage{
+  border: 2px solid black;
+  width: 30%;
+}
+.produto{
+  width: 100%;
+}
+
+.ladoDireito{
+  border: 2px solid black;
+  width: 70%;
+  margin-left: 5%;
+}
+.completoPage{
+  border: 2px solid black;
+  display: flex;
+}
+
+.produtoTexto{
+  font-family: 'Ruda', sans-serif;
+  font-size: 30px;
+
+}
+.corners { 
+  background: #f6f6f673;
+  height: 50px;
+  margin: 50px auto;
+  max-width: 200px;
+  position: relative;
+  width: 80%;
+  box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+  font-family: 'Ruda', sans-serif;
+  font-size: 20px;
+  margin-right: 70%;
+ 
+}
+
+/* Corner Effect */
+.corners:after,
+.corners:before {
+  background: #0297344b;
+  content: '';
+  height: 30px;
+  position: absolute;
+  top: -13px;
+  width: 60px;
+  box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
+}
+.corners:after {
+  left: -50px;
+  transform: rotate(-45deg);
+}
+.corners:before {
+  right: -50px;
+  transform: rotate(45deg);
+}
+.cent{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+
+/*///////////////////////////////////////////////////////*/
+
+
+
+.input-groupP {
+  position: relative;
+}
+
+.inputP {
+  border: 3px solid #000;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: black;
+}
+
+.user-labelP {
+  position: absolute;
+  left: 15px;
+  color: #000;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 350ms;
+}
+
+.inputP:focus,
+inputP:valid {
+  outline: none;
+  --angle: 0deg;
+  border-bottom: 3px solid;
+  border-image: conic-gradient(from var(--angle), #2ae919, #2dad19, #70bf5f,#2ae919 , #9cf576) 1;
+  animation: 3s rotate9234 linear infinite;
+}
+
+@keyframes rotate9234 {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.inputP:focus~label,
+input:valid~label {
+  transform: translateY(265%) scale(1);
+ 
+  padding: 0 .9em;
+  color: #f7efe5;
+}
+
+
+.cent3{
+ 
+  display: flex;
+}
+
+
+
+
+
+
+button {
+  font-size: 18px;
+  color: #56b98bb0;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+button:focus,
+button:hover {
+  color: rgba(14, 179, 8, 0.719);
+}
+
+button:focus:after,
+button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: rgba(14, 179, 8, 0.719);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+
+
+
 @media only screen and (max-width: 490px){
   /*------ RESPONSIVIDADE DA PAGINA SOBRE NOS------*/
   .container{
@@ -846,6 +1043,7 @@ footer {
   .logo2 {
     display: block;
     width: 30%;
+    margin-right: 33%;
 
   }
 
@@ -969,6 +1167,33 @@ footer {
     font-family: 'Antonio', sans-serif;
     font-size: 16px;
 
+  }
+  .informacoesHome{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    border: 2px solid black;
+  
+  }
+  .bannerInfor1{
+    border: 2px solid black;
+
+  }
+  .bannerInfor2{
+    border: 2px solid black;
+
+  }
+  
+  .bannerInfor1img {
+ 
+  
+
+  }
+  .bannerInfor2img {
+    
+    width: 100%;
+    display: none;
+  
   }
 
 
