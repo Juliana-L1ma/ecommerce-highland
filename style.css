@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruda:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap');
+
 
 body {
   margin: 0 auto;
@@ -19,9 +19,6 @@ body {
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
 
 }
-a{
-  text-decoration: none;
-}
 
 .logo2 {
   display: none;
@@ -29,7 +26,7 @@ a{
 
 
 .logoo {
-  width: 40%;
+  width: 9%;
   margin-top: 3%;
   margin-left: 3%;
 }
@@ -200,7 +197,19 @@ a{
 #carouselExample {
   margin-top: 5%;
 }
-
+a{
+  text-decoration: none;
+  color: black;
+}
+.real{
+  margin-left: 45%;
+}
+.price{
+  margin-left: 45%;
+}
+.descricoesProdutos{
+  margin: 0 auto;
+}
 .alinhar {
   display: flex;
   flex-direction: row;
@@ -214,14 +223,6 @@ a{
   border-radius: 50%;
   height: 40px;
   width: 40px;
-}
-
-.control-prev-produto {
-  margin-left: 8%;
-}
-
-.control-next-produto {
-  margin-right: 8%;
 }
 
 /*---------------------tags para estilo dos card de produtos da home-------------------*/
@@ -271,6 +272,13 @@ a{
 }
 
 
+.carousel-control-prev, .carousel-control-next{
+  margin-top: 10%;
+   background-color: #a8a8a8c0;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
 
 .text {
   max-width: 55px;
@@ -292,7 +300,7 @@ a{
 /*------------------------  Banner DE AVALIAÇÃO - HOME ---------------------------------------*/
 .avaliacao{
   margin: 0 auto;
-  margin-top: 6%;
+  margin-top: 2%;
   background-color: #e3dae4;
   width: 80%;
   display: flex;
@@ -300,12 +308,12 @@ a{
 }
 
 .todasAvaliacao{
-  padding: 4%;
+  padding: 2%;
 }
 .infoUsuario{
   width: 100%;
-  padding: 2%;
-  margin-top: 3%;
+  padding: 1%;
+  margin-top: 2%;
   background: #d0e9dd;
   color: rgb(0, 0, 0);
   border-radius: 20px;
@@ -313,6 +321,9 @@ a{
   font-family: 'Raleway', sans-serif;
   box-shadow: 15px 15px 30px #bebebe,
   -15px -15px 30px #9b9797;
+}
+.infoUsuario:hover{
+  scale: 1.1;
 }
 .tituloAvaliacao{
   padding: 2%;
@@ -344,35 +355,20 @@ a{
 .informacoesHome{
   display: flex;
   flex-direction: row;
-
-  text-align: center;
-
 }
 
 .bannerInfor1img {
-  padding-left: 28%;
   margin: 0 auto;
-  width: 800px;
-  height: 400px;
+  padding: 5%;
+  width: 850px;
+  height: 500px;
 }
 .bannerInfor2img {
-  padding-left: 25%;
- 
   margin: 0 auto;
-  width: 800px;
-  height: 400px;
+  padding: 5%;
+  width: 850px;
+  height: 500px;
 }
-.bannerInfor1{
-  border: 2px solid black;
-
-}
-.bannerInfor2{
-  border: 2px solid black;
-
-}
-
-
-
 
 /*--------------------ESTILO DE PRODUTOS-------------*/
 .bannerfixo1{
@@ -385,6 +381,8 @@ a{
   width: 60%;
   height: 500px;
 }
+/*----------------------- CARD COM OS PRODUTOS -------------------------*/
+
 @media only screen and (max-width: 490px){
   #header{
     height: 100px;
@@ -393,7 +391,15 @@ a{
     display: flex;
     flex-direction: column;
   }
-  
+  .card{
+    width:300px;
+    height: 150px;
+  }
+  .carousel-control-prev, .carousel-control-next{
+    margin-top: 30%;
+    height: 30px;
+    width: 30px;
+  }
   .bannerInfor1img {
     width: 100%;
     height: 150px;
@@ -414,7 +420,9 @@ a{
     width: 80%;
     height: 120px;
   }
-
+.id{
+  display: none;
+}
 
   .avaliacao{
     margin: 0 auto;
@@ -707,183 +715,6 @@ footer {
 }
 
 
-
-
-
-/* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
-
-
-.produtoPage{
-  border: 2px solid black;
-  width: 30%;
-}
-.produto{
-  width: 100%;
-}
-
-.ladoDireito{
-  border: 2px solid black;
-  width: 70%;
-  margin-left: 5%;
-}
-.completoPage{
-  border: 2px solid black;
-  display: flex;
-}
-
-.produtoTexto{
-  font-family: 'Ruda', sans-serif;
-  font-size: 30px;
-
-}
-.corners { 
-  background: #f6f6f673;
-  height: 50px;
-  margin: 50px auto;
-  max-width: 200px;
-  position: relative;
-  width: 80%;
-  box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
-  font-family: 'Ruda', sans-serif;
-  font-size: 20px;
-  margin-right: 70%;
- 
-}
-
-/* Corner Effect */
-.corners:after,
-.corners:before {
-  background: #0297344b;
-  content: '';
-  height: 30px;
-  position: absolute;
-  top: -13px;
-  width: 60px;
-  box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
-}
-.corners:after {
-  left: -50px;
-  transform: rotate(-45deg);
-}
-.corners:before {
-  right: -50px;
-  transform: rotate(45deg);
-}
-.cent{
-  display: flex;
-  justify-content: center;
- 
-}
-
-
-/*///////////////////////////////////////////////////////*/
-
-
-
-.input-groupP {
-  position: relative;
-}
-
-.inputP {
-  border: 3px solid #000;
-  background: none;
-  padding: 1rem;
-  font-size: 1rem;
-  color: black;
-}
-
-.user-labelP {
-  position: absolute;
-  left: 15px;
-  color: #000;
-  pointer-events: none;
-  transform: translateY(1rem);
-  transition: 350ms;
-}
-
-.inputP:focus,
-inputP:valid {
-  outline: none;
-  --angle: 0deg;
-  border-bottom: 3px solid;
-  border-image: conic-gradient(from var(--angle), #2ae919, #2dad19, #70bf5f,#2ae919 , #9cf576) 1;
-  animation: 3s rotate9234 linear infinite;
-}
-
-@keyframes rotate9234 {
-  to {
-    --angle: 360deg;
-  }
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.inputP:focus~label,
-input:valid~label {
-  transform: translateY(265%) scale(1);
- 
-  padding: 0 .9em;
-  color: #f7efe5;
-}
-
-
-.cent3{
- 
-  display: flex;
-}
-
-
-
-
-
-
-button {
-  font-size: 18px;
-  color: #56b98bb0;
-  font-family: inherit;
-  font-weight: 800;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-}
-
-button:focus,
-button:hover {
-  color: rgba(14, 179, 8, 0.719);
-}
-
-button:focus:after,
-button:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-button:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: rgba(14, 179, 8, 0.719);
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
-}
-
-
-
-
 @media only screen and (max-width: 490px){
   /*------ RESPONSIVIDADE DA PAGINA SOBRE NOS------*/
   .container{
@@ -1043,7 +874,6 @@ button:after {
   .logo2 {
     display: block;
     width: 30%;
-    margin-right: 33%;
 
   }
 
@@ -1168,38 +998,61 @@ button:after {
     font-size: 16px;
 
   }
-  .informacoesHome{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    border: 2px solid black;
+
+}
+/*-------------responsividade tablets--------------------*/
+@media only screen and (min-width: 480px) and (max-width: 860px) {
   
-  }
-  .bannerInfor1{
-    border: 2px solid black;
+/* -----------------  Banner VERDE DE INFORMAÇÕES - HOME */
+.informacoesHome{
+  display: flex;
+  flex-direction: column;
+}
 
-  }
-  .bannerInfor2{
-    border: 2px solid black;
-
-  }
-  
-  .bannerInfor1img {
- 
-  
-
-  }
-  .bannerInfor2img {
-    
-    width: 100%;
-    display: none;
-  
-  }
+.bannerInfor1img {
+  width: 725px;
+  height: 350px;
+}
+.bannerInfor2img {
+  width: 725px;
+  height: 350px;
+}
 
 
+/*------------------------  Banner DE AVALIAÇÃO - HOME ---------------------------------------*/
+.avaliacao{
+  width: 80%;
+}
 
-
-
-
-
+.todasAvaliacao{
+  padding: 4%;
+}
+.infoUsuario{
+  margin: 0 auto;
+  width: 90%;
+  padding: 2%;
+  margin-top: 3%;
+  font-size: 0.8em;
+}
+.infoUsuario:hover{
+  scale: 1.1;
+}
+.tituloAvaliacao{
+  margin-left: 26%;
+}
+.modelo{
+  display: none;
+}
+.bannerfixo1{
+  width: 100%;
+  height: 400px;
+}
+.bannerfixo2{
+  margin-top: 5% ;
+  width: 60%;
+  height: 200px;
+}
+.task{
+  width: 85%;
+}
 }

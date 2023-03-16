@@ -5,7 +5,6 @@ fetch('produtos.json').then(response => response.json())
 
      /*---------------------------Produto 1 -----------------------------------*/
     document.getElementById("nomeProduto1").innerHTML = informacoes.sabonete.nome;
-    document.getElementById("id").innerHTML = "ID do produto " + informacoes.sabonete.id;
     document.getElementById("valorDolarProduto1").innerHTML =informacoes.sabonete.valor;
     var valorDolarProduto1 = informacoes.sabonete.valor; 
     document.getElementById("valorDolarProduto1").innerHTML = "U$ " + valorDolarProduto1;
@@ -13,42 +12,36 @@ fetch('produtos.json').then(response => response.json())
 
      /*---------------------------Produto 2 -----------------------------------*/
      document.getElementById("nomeProduto2").innerHTML = informacoes.shampoo.nome;
-     document.getElementById("id2").innerHTML = "ID do produto " + informacoes.shampoo.id;
      document.getElementById("valorDolarProduto2").innerHTML =informacoes.shampoo.valor;
      var valorDolarProduto2 = informacoes.shampoo.valor; 
      document.getElementById("valorDolarProduto2").innerHTML = "U$ " + valorDolarProduto2;
 
       /*---------------------------Produto 3 -----------------------------------*/
     document.getElementById("nomeProduto3").innerHTML = informacoes.condicionador.nome;
-    document.getElementById("id3").innerHTML = "ID do produto " + informacoes.condicionador.id;
     document.getElementById("valorDolarProduto3").innerHTML =informacoes.condicionador.valor;
     var valorDolarProduto3 = informacoes.condicionador.valor; 
     document.getElementById("valorDolarProduto3").innerHTML = "U$ " + valorDolarProduto3;
 
      /*---------------------------Produto 4 -----------------------------------*/
      document.getElementById("nomeProduto4").innerHTML = informacoes.kit1.nome;
-     document.getElementById("id4").innerHTML = "ID do produto " + informacoes.kit1.id;
      document.getElementById("valorDolarProduto4").innerHTML =informacoes.kit1.valor;
      var valorDolarProduto4 = informacoes.kit1.valor; 
      document.getElementById("valorDolarProduto4").innerHTML = "U$ " + valorDolarProduto4;
 
       /*---------------------------Produto 5 -----------------------------------*/
     document.getElementById("nomeProduto5").innerHTML = informacoes.argila.nome;
-    document.getElementById("id5").innerHTML = "ID do produto " + informacoes.argila.id;
     document.getElementById("valorDolarProduto5").innerHTML =informacoes.argila.valor;
     var valorDolarProduto5 = informacoes.argila.valor; 
     document.getElementById("valorDolarProduto5").innerHTML = "U$ " + valorDolarProduto5;
 
      /*---------------------------Produto 6 -----------------------------------*/
      document.getElementById("nomeProduto6").innerHTML = informacoes.oleo.nome;
-     document.getElementById("id6").innerHTML = "ID do produto " + informacoes.oleo.id;
      document.getElementById("valorDolarProduto6").innerHTML =informacoes.oleo.valor;
      var valorDolarProduto6 = informacoes.oleo.valor; 
      document.getElementById("valorDolarProduto6").innerHTML = "U$ " + valorDolarProduto6;
 
        /*---------------------------Produto 7 -----------------------------------*/
        document.getElementById("nomeProduto7").innerHTML = informacoes.kit2.nome;
-       document.getElementById("id7").innerHTML = "ID do produto " + informacoes.kit2.id;
        document.getElementById("valorDolarProduto7").innerHTML =informacoes.kit2.valor;
        var valorDolarProduto7 = informacoes.kit2.valor; 
        document.getElementById("valorDolarProduto7").innerHTML = "U$ " + valorDolarProduto7;
@@ -56,7 +49,6 @@ fetch('produtos.json').then(response => response.json())
        
          /*---------------------------Produto 8 -----------------------------------*/
      document.getElementById("nomeProduto8").innerHTML = informacoes.essencia.nome;
-     document.getElementById("id8").innerHTML = "ID do produto " + informacoes.essencia.id;
      document.getElementById("valorDolarProduto8").innerHTML =informacoes.essencia.valor;
      var valorDolarProduto8 = informacoes.essencia.valor; 
      document.getElementById("valorDolarProduto8").innerHTML = "U$ " + valorDolarProduto8;
@@ -64,21 +56,18 @@ fetch('produtos.json').then(response => response.json())
 
        /*---------------------------Produto 9 -----------------------------------*/
        document.getElementById("nomeProduto9").innerHTML = informacoes.escova.nome;
-       document.getElementById("id9").innerHTML = "ID do produto " + informacoes.escova.id;
        document.getElementById("valorDolarProduto9").innerHTML =informacoes.escova.valor;
        var valorDolarProduto9 = informacoes.escova.valor; 
        document.getElementById("valorDolarProduto9").innerHTML = "U$ " + valorDolarProduto9;
   
         /*---------------------------Produto 10 -----------------------------------*/
         document.getElementById("nomeProduto10").innerHTML = informacoes.argilaRosa.nome;
-        document.getElementById("id10").innerHTML = "ID do produto " + informacoes.argilaRosa.id;
         document.getElementById("valorDolarProduto10").innerHTML =informacoes.argilaRosa.valor;
         var valorDolarProduto10 = informacoes.argilaRosa.valor; 
         document.getElementById("valorDolarProduto10").innerHTML = "U$ " + valorDolarProduto10;
 
          /*---------------------------Produto 11 -----------------------------------*/
        document.getElementById("nomeProduto11").innerHTML = informacoes.serum.nome;
-       document.getElementById("id11").innerHTML = "ID do produto " + informacoes.serum.id;
        document.getElementById("valorDolarProduto11").innerHTML =informacoes.serum.valor;
        var valorDolarProduto11 = informacoes.serum.valor; 
        document.getElementById("valorDolarProduto11").innerHTML = "U$ " + valorDolarProduto11;
@@ -86,7 +75,6 @@ fetch('produtos.json').then(response => response.json())
 
         /*---------------------------Produto 12 -----------------------------------*/
         document.getElementById("nomeProduto12").innerHTML = informacoes.oleoEssencial.nome;
-        document.getElementById("id12").innerHTML = "ID do produto " + informacoes.oleoEssencial.id;
         document.getElementById("valorDolarProduto12").innerHTML =informacoes.oleoEssencial.valor;
         var valorDolarProduto12 = informacoes.oleoEssencial.valor; 
         document.getElementById("valorDolarProduto12").innerHTML = "U$ " + valorDolarProduto12;
