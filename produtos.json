@@ -1,6 +1,6 @@
 {
     "sabonete":{
-        "nome": "Sabonete corporal limpa e perfuma - vegano, ",
+        "nome": "Sabonete corporal limpa e perfuma - vegano ",
         "id": "6398",
         "valor": 7.00,
         "estoque": "Disponível"
@@ -41,28 +41,28 @@
     },
 
     "kit2":{
-        "nome": "descrição kit2",
+        "nome": "Sabonete de Maracujá",
         "id": "1111",
         "valor": 21.00,
         "estoque": "Disponível"
     },
 
     "essencia":{
-        "nome": "descrição essencia",
+        "nome": "Sabone de Rosas",
         "id": "2211",
         "valor": 9.00,
         "estoque": "Disponível"
     },
 
     "escova":{
-        "nome": "Descricao escova",
+        "nome": "Óleo de Lavanda",
         "id": "3534",
         "valor": 7.00,
         "estoque": "Disponível"
     },
 
     "argilaRosa":{
-        "nome": "argila rosa",
+        "nome": "Argila rosa",
         "id": "8201",
         "valor": 8.00,
         "estoque": "Disponível"
@@ -76,7 +76,7 @@
     },
 
     "oleoEssencial":{
-        "nome": "oleo Essencial",
+        "nome": "Sabonete de Mamão",
         "id": "7128",
         "valor": 9.00,
         "estoque": "Disponível"
