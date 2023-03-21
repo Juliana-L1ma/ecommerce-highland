@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Raleway:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
 
 body {
   margin: 0 auto;
@@ -717,6 +718,50 @@ footer {
 
 /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
 
+#botao {
+
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-left: 20%;
+ }
+ 
+ #botao:disabled {
+  pointer-events: none;
+ }
+ 
+ #botao:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ #botao:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
 
 .produtoPage{
  
@@ -788,9 +833,13 @@ footer {
 .cent{
   display: flex;
   justify-content: center;
- 
-}
 
+}
+.cent3{
+  display: flex;
+  display: inline-flex;
+  position: relative;
+}
 
 /*///////////////////////////////////////////////////////*/
 
@@ -872,46 +921,7 @@ input:valid~label {
 
 
 
-button {
-  margin-left: 10%;
-  font-size: 18px;
-  color: #56b98bb0;
-  font-family: inherit;
-  font-weight: 800;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-}
 
-button:focus,
-button:hover {
-  color: rgba(14, 179, 8, 0.719);
-}
-
-button:focus:after,
-button:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-button:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: rgba(14, 179, 8, 0.719);
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
-}
 
 
 /* ////////////////////////////////////////////////// Fim Produtosss sozinho //////////////////////////////////////////////*/
@@ -1281,7 +1291,13 @@ table{
   /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
 
 
-.produtoPage{
+
+
+  #valorFrete{
+    color: #042c01;
+    font-family: 'Karla', sans-serif;
+  
+  }.produtoPage{
 
   display: none;
 
@@ -1291,19 +1307,22 @@ table{
 .produtoPage2{
 
 display: block;
+
 }
 
 .ladoDireito{
 
  
   width: 100%;
-  margin-right: 20%;
+  margin-right: 10%;
+  /* border: 2px solid black; */
 
 }
 .completoPage{
   /* border: 2px solid black; */
+
   display: flex;
-  width: 100%;
+  width: 80%;
 }
 
 .produtoTexto{
@@ -1313,7 +1332,7 @@ display: block;
 }
 .corners { 
   background: #f6f6f673;
-  height: 40px;
+  height: 50px;
   margin: 50px auto;
   max-width: 200px;
   position: relative;
@@ -1328,7 +1347,7 @@ display: block;
 .corners:before {
   background: #0297341f;
   content: '';
-  height: 30px;
+  height: 31px;
   position: absolute;
   top: -7px;
   width: 55px;
@@ -1348,6 +1367,54 @@ display: block;
   
  
 }
+
+
+#botao {
+
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-left: 17%;
+  width: 60%;
+  margin-top: 10%;
+ }
+ 
+ #botao:disabled {
+  pointer-events: none;
+ }
+ 
+ #botao:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ #botao:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+
 
 
 /*///////////////////////////////////////////////////////*/
@@ -1433,48 +1500,6 @@ input:valid~label {
 
 
 
-button {
- 
-  margin-top: 10%;
-  margin-right: 28%;
-  font-size: 18px;
-  color: #56b98bb0;
-  font-family: inherit;
-  font-weight: 800;
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-}
-
-button:focus,
-button:hover {
-  color: rgba(14, 179, 8, 0.719);
-}
-
-button:focus:after,
-button:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-button:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: rgba(14, 179, 8, 0.719);
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
-}
 
 
 
