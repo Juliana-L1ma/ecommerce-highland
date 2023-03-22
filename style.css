@@ -17,12 +17,13 @@ body {
   padding: 1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.1);
 
 }
 a{
   text-decoration: none;
+  color: #1A1A1A;
 }
 
 .logo2 {
@@ -34,6 +35,7 @@ a{
   width: 40%;
   margin-top: 3%;
   margin-left: 3%;
+  padding: 2%;
 }
 
 #menu {
@@ -48,18 +50,18 @@ a{
 
   display: block;
   padding: 2.0rem;
-  color: #0b3800;
+  color: #4d504d;
   text-decoration: none;
   font-family: 'Antonio', sans-serif;
-  font-size: 26px;
-
-
+  font-size: 1em;
+ font-weight: bold;
+ 
 }
 
 #menu a:hover {
-
-  transition: 1s;
-  color: #008031e3;
+  transition: 0.5s;
+  transform: scale(1.1);
+  color: #4c8360e3;
 }
 
 #btn-mobile {
@@ -69,71 +71,23 @@ a{
 
 
 
-
 /*Barra de Pesquisa Começo*/
-
-
-.search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 25px;
-  margin-right: 30px;
-
-}
-
-.search__input {
-  font-family: inherit;
-  font-size: inherit;
-  background-color: #ffffff;
+.input-wrapper input {
+  background-color: #eee;
+  margin-left: 5%;
+  margin-top: 2%;
   border: none;
-  color: #646464;
-  padding: 0.9rem 1rem;
-  border-radius: 30px;
-  width: 13em;
-  transition: all ease-in-out .5s;
-  margin-right: -2rem;
-}
-
-.search__input:hover,
-.search__input:focus {
-  box-shadow: 0 0 1em #018844c0;
-}
-
-.search__input:focus {
-  outline: none;
-  background-color: #ffffff;
-}
-
-.search__input::-webkit-input-placeholder {
-  font-weight: 100;
-  color: #695151;
-}
-
-.search__input:focus+.search__button {
-  background-color: #f0eeee00;
-}
-
-.search__button {
-  border: none;
-  background-color: #ffffff00;
-  margin-top: .1em;
-
-}
-
-.search__button:hover {
+  padding: 1rem;
+  font-size: 1.1rem;
+  width: 115%;
+  border-radius: 1rem;
+  color: rgb(54, 129, 10);
+  box-shadow: 0 0.4rem #dfd9d9;
   cursor: pointer;
 }
 
-.search__icon {
-  height: 1.3em;
-  width: 2.0em;
-  fill: #000000c0;
-margin: 40%;
-  
-  
-
+.input-wrapper input:focus {
+  outline-color: rgb(41, 94, 34);
 }
 
 /*---------------------------- FIM DO HEADER ------------*/
@@ -145,13 +99,6 @@ margin: 40%;
   align-items: center;
 }
 
-.control-banner-prev,
-.control-banner-next {
-  background-color: #00AC7C;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
-}
 
 .control-banner-prev {
   margin-left: 10%;
@@ -213,23 +160,21 @@ margin: 40%;
   justify-content: space-evenly;
 }
 
-.control-prev-produto,
-.control-next-produto {
-  margin-top: 5%;
+.carousel-control-prev-icon {
+  margin-left: 8%;
+}
+
+.carousel-control-next-icon {
+  margin-right: 8%;
+}
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon{
+  margin-bottom: 50%;
   background-color: #a8a8a8c0;
   border-radius: 50%;
   height: 40px;
   width: 40px;
 }
-
-.control-prev-produto {
-  margin-left: 8%;
-}
-
-.control-next-produto {
-  margin-right: 8%;
-}
-
 /*---------------------tags para estilo dos card de produtos da home-------------------*/
 .card {
   width: 350px;
@@ -264,7 +209,7 @@ margin: 40%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 0.9em;
   position: absolute;
-  left: 0.625em;
+  left: 45%;
   bottom: 0.625em;
 }
 
@@ -306,7 +251,7 @@ margin: 40%;
 }
 
 .todasAvaliacao{
-  padding: 4%;
+  padding: 2%;
 }
 .infoUsuario{
   width: 100%;
@@ -321,7 +266,7 @@ margin: 40%;
   -15px -15px 30px #9b9797;
 }
 .tituloAvaliacao{
-  padding: 2%;
+  padding: 1%;
   margin-left: 24%;
   font-family: 'Raleway', sans-serif;
   text-shadow:  rgba(0, 0, 0, 0.644) 0.1em 0.1em 0.4em;
@@ -350,31 +295,22 @@ margin: 40%;
 .informacoesHome{
   display: flex;
   flex-direction: row;
-
   text-align: center;
-
+  margin: 0 auto;
 }
 
 .bannerInfor1img {
-  padding-left: 28%;
   margin: 0 auto;
-  width: 800px;
+  width: 700px;
   height: 400px;
+  padding: 1%;
+
 }
 .bannerInfor2img {
-  padding-left: 25%;
- 
   margin: 0 auto;
-  width: 800px;
+  width: 700px;
   height: 400px;
-}
-.bannerInfor1{
-  border: 2px solid black;
-
-}
-.bannerInfor2{
-  border: 2px solid black;
-
+  padding: 1%;
 }
 
 
@@ -719,12 +655,8 @@ footer {
 /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
 
 #botao {
-
-  appearance: none;
   background-color: transparent;
-  border: 0.125em solid #1A1A1A;
-  border-radius: 0.9375em;
-  box-sizing: border-box;
+  border: 0.125em solid rgb(128, 126, 126);
   color: #3B3B3B;
   cursor: pointer;
   display: inline-block;
@@ -732,36 +664,63 @@ footer {
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
-  
-  min-height: 3.75em;
-  min-width: 0;
+  height: 3.70em;
+  width: 100px;
   outline: none;
-  padding: 1em 2.3em;
-  text-align: center;
+  text-align:center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   will-change: transform;
-  margin-left: 20%;
  }
- 
- #botao:disabled {
-  pointer-events: none;
- }
- 
  #botao:hover {
-  color: #fff;
-  background-color: #1A1A1A;
+  color: #000000;
+  background-color: rgb(150, 200, 150);
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
  }
  
  #botao:active {
   box-shadow: none;
-  transform: translateY(0);
  }
+ .inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  width: 260px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 1em;
+  outline: none;
+  border: 2px solid rgb(128, 126, 126);
+  background-color: transparent;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(32, 31, 31);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: rgb(150, 200, 150);
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 200, 150);
+}
 
 .produtoPage{
  
@@ -772,24 +731,37 @@ footer {
 
 }
 .produto{
-  width: 100%;
+  width: 80%;
+}
+.produto-titulo{
+  font-family: 'Raleway', sans-serif;
+  color: rgb(60, 65, 60); 
+  text-shadow:  rgba(37, 36, 36, 0.644) 0.1em 0.1em 0.2em;
+  text-align:left;
+  font-size: 2em;
+}
+.descricao-produto{
+  text-align: center;
+  width: 70%;
+  font-size: 1.1em;
+  padding: 2%;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .produto:hover{
-  transition: 1s;
-  width: 110%;
+  transform: scale(1.3);
 }
-
 .ladoDireito{
   margin-top: 2%;
   /* border: 2px solid black; */
-  width: 70%;
-  margin-left: 5%;
+  width: 50%;
+  margin-left: 10%;
 }
 .completoPage{
   /* border: 2px solid black; */
   display: flex;
-  margin-left: 10%;
-  width: 100%;
+  margin-left: 5%;
+  width: 80%;
 }
 
 .produtoTexto{
@@ -797,21 +769,23 @@ footer {
   font-size: 40px;
 
 }
+
+
+/* Corner Effect */
 .corners { 
   background: #f6f6f673;
   height: 60px;
-  margin: 80px auto;
+  margin-top: 10%;
   max-width: 200px;
   position: relative;
   width: 80%;
   box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
-  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 25px;
   margin-right: 65%;
  
 }
-
-/* Corner Effect */
 .corners:after,
 .corners:before {
   background: #0297341f;
@@ -831,7 +805,8 @@ footer {
   transform: rotate(45deg);
 }
 .cent{
-  display: flex;
+  width: 250px;
+  padding: 2%;
   justify-content: center;
 
 }
@@ -841,79 +816,25 @@ footer {
   position: relative;
 }
 
+.linha{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+ }
 /*///////////////////////////////////////////////////////*/
 
-
-
-.input-groupP {
-  position: relative;
-}
-
-.inputP {
-  border: 3px solid #000;
-  background: none;
-  padding: 1rem;
-  font-size: 1rem;
-  color: black;
-}
-
-.user-labelP {
-  position: absolute;
-  left: 15px;
-  color: #000;
-  pointer-events: none;
-  transform: translateY(1rem);
-  transition: 350ms;
-}
-
-.inputP:focus,
-inputP:valid {
-  outline: none;
-  --angle: 0deg;
-  border-bottom: 3px solid;
-  border-image: conic-gradient(from var(--angle), #2ae919, #2dad19, #70bf5f,#2ae919 , #9cf576) 1;
-  animation: 3s rotate9234 linear infinite;
-}
-
-@keyframes rotate9234 {
-  to {
-    --angle: 360deg;
-  }
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.inputP:focus~label,
-input:valid~label {
-  transform: translateY(265%) scale(1);
- 
-  padding: 0 .9em;
-  color: #f7efe5;
-}
-
-
-.cent3{
- 
-  display: flex;
-  margin-left: 9%;
- 
-}
 
 
 .textoT{
   margin-left: 9%;
   margin-top: 40%;
-  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(60, 65, 60); 
+  text-shadow:  rgba(37, 36, 36, 0.644) 0.1em 0.1em 0.2em;
   text-decoration: none;
-  color: #00AC7C;
+  color: #000000;
   font-size: 23px;
-}
-.textoT:hover{
-  color: #29da19;
 }
 
 
