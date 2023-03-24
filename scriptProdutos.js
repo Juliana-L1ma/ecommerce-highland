@@ -54,13 +54,13 @@ fetch('produtos.json').then(response => response.json())
     
 
 
-        var dolarAtual = economia.EURBRL.bid;
+        var dolarAtual = economia.USDBRL.bid;
 
         /*---------------------------Produto 1 -----------------------------------*/
         var convertidoValorProduto1 = valorDolarProduto1 * dolarAtual;
         var converValorProduto1 = convertidoValorProduto1.toFixed(2);
         document.getElementById("valorRealProduto1").innerHTML = "R$" + converValorProduto1;
-
+        console.log();
          /*---------------------------Produto 2 -----------------------------------*/
          var convertidoValorProduto2 = valorDolarProduto2 * dolarAtual;
          var converValorProduto2 = convertidoValorProduto2.toFixed(2);
@@ -188,7 +188,7 @@ fetch('produtos.json').then(responde => responde.json())
     return response.json() })
     .then(economia => {
 
-      var dolarAtual = economia.EURBRL.bid;
+      var dolarAtual = economia.USDBRL.bid;
 
 /*---------------------------Produto 7 -----------------------------------*/
 var convertidoValorProduto7 = valorDolarProduto7 * dolarAtual;

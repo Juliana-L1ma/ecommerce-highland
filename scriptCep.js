@@ -1,17 +1,4 @@
 
-//JavaScript do CEP
-function promocao(){
-    if (navigator.cookieEnabled==true)
-	{
-	alert("Cookies ativado")
-	}
-else
-	{
-	alert("Cookies não ativado")
-	}
-}
-
-
 //array para as regiões
 let regioes = [
     {regiao: 'Norte', estado:'AM' },
@@ -83,35 +70,31 @@ for( x=0; x<regioes.length; x++ ){
         var regiao = regioes[x].regiao;
 
         if(document.getElementById("cidade").value == 'Mogi das Cruzes'){
-            document.getElementById("valorFrete").innerHTML = "Valor do frete = grátis" + "Tempo de entrega a partir da postagem do produto: 1 úteis";
+            document.getElementById("valorFrete").innerHTML = "Valor do frete = grátis" + "Tempo de entrega a partir da postagem do produto: 1 dia útil";
             return;
         }
 
         if(regiao == 'Sudeste'){
-            document.getElementById("valorFrete").innerHTML ="Valor do frete = R$ 20,00" + "<br>Tempo de entrega a partir da postagem do produto: 3 úteis";
-           
-
+            document.getElementById("valorFrete").innerHTML ="Valor do frete = R$ 20,00" + "Tempo de entrega a partir da postagem do produto: 3 úteis";
             return;
         }
 
         if(regiao == 'Sul'){
-            console.log("Valor do frete = R$ 40,00");
-            console.log("Tempo de entrega a partir da postagem do produto: 5 úteis");
+            document.getElementById("valorFrete").innerHTML = "Valor do frete = R$ 40,00" + " Tempo de entrega a partir da postagem do produto: 5 úteis";
+           
             return;
         }
         if(regiao == 'Centro Oeste'){
-            console.log("Valor do frete = R$ 40,00");
-            console.log("Tempo de entrega a partir da postagem do produto: 5 úteis");
+            document.getElementById("valorFrete").innerHTML = "Valor do frete = R$ 40,00" + " Tempo de entrega a partir da postagem do produto: 5 úteis";
             return;
         }
         if(regiao == 'Nordeste'){
-            console.log("Valor do frete = R$ 50,00");
-            console.log("Tempo de entrega a partir da postagem do produto: 8 úteis");
+            document.getElementById("valorFrete").innerHTML = "Valor do frete = R$ 50,00" + " Tempo de entrega a partir da postagem do produto: 8 úteis";
             return;
         }
         if(regiao == 'Norte'){
-            console.log("Valor do frete = R$ 60,00");
-            console.log("Tempo de entrega a partir da postagem do produto: 10 úteis");
+            document.getElementById("valorFrete").innerHTML = "Valor do frete = R$ 60,00" + " Tempo de entrega a partir da postagem do produto: 10 úteis";
+           
             return;
         }
        

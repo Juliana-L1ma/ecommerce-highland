@@ -654,6 +654,10 @@ footer {
 
 /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
 
+#imagemProduto{
+
+  display: none;
+}
 #botao {
   background-color: transparent;
   border: 0.125em solid rgb(128, 126, 126);
@@ -978,7 +982,7 @@ table{
 }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 490px) {
   #menu {
     display: block;
     position: absolute;
@@ -1063,7 +1067,6 @@ table{
   }
 
   .search {
-
     margin-top: 10%;
   }
 
@@ -1094,9 +1097,6 @@ table{
   #carouselExample {
     margin-top: 15%;
   }
-
-
-
 
 
   .card {
@@ -1133,7 +1133,7 @@ table{
 
   .title {
     font-size: 13px;
-    color: #00AC7C;
+    color: #000000;
     text-decoration: none;
   }
 
@@ -1183,17 +1183,10 @@ table{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    border: 2px solid black;
+    
   
   }
-  .bannerInfor1{
-    border: 2px solid black;
 
-  }
-  .bannerInfor2{
-    border: 2px solid black;
-
-  }
 
   .bannerInfor2img {
     
@@ -1216,7 +1209,7 @@ table{
 
   #valorFrete{
     color: #042c01;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Antonio', sans-serif;
   
   }.produtoPage{
 
@@ -1225,15 +1218,27 @@ table{
 }
 
 
-.produtoPage2{
 
-display: block;
+#imagemProduto{
 
+  display: block;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: 6%;
+}
+.produto-titulo{
+  font-size: 20px;
+  margin-top: 5%;
+}
+.descricao-produto{
+text-align: justify;
+width: 100%;
+font-family: 'Karla', sans-serif;
+font-size: 15px;
 }
 
 .ladoDireito{
-
- 
   width: 100%;
   margin-right: 10%;
   /* border: 2px solid black; */
@@ -1260,7 +1265,8 @@ display: block;
   width: 50%;
   box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
   font-family: 'Edu NSW ACT Foundation', cursive;
-  font-size: 17px;
+  font-size: 18px;
+  margin-right: 25%;
 }
 
 /* Corner Effect */
@@ -1284,56 +1290,21 @@ display: block;
 }
 .cent{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   
  
 }
 
 
 #botao {
-
-  appearance: none;
-  background-color: transparent;
-  border: 0.125em solid #1A1A1A;
   border-radius: 0.9375em;
-  box-sizing: border-box;
-  color: #3B3B3B;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
-  min-height: 3.75em;
-  min-width: 0;
-  outline: none;
-  padding: 1em 2.3em;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  will-change: transform;
-  margin-left: 17%;
-  width: 60%;
+  margin:0 auto;
+  width: 40%;
   margin-top: 10%;
  }
- 
- #botao:disabled {
-  pointer-events: none;
- }
- 
- #botao:hover {
-  color: #fff;
-  background-color: #1A1A1A;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
- }
- 
- #botao:active {
-  box-shadow: none;
-  transform: translateY(0);
+ .linha{
+  display: flex;
+  flex-direction: column;
  }
 
 
@@ -1403,46 +1374,166 @@ input:valid~label {
 
 
 .textoT{
-  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Antonio', sans-serif;
   text-decoration: none;
-  color: #00AC7C;
-  font-size: 23px;
+  color: #302e2e;
+  font-size: 15px;
   display: flex;
   margin-top: -10%;
- 
+ text-align: center;
 
 }
-.textoT:hover{
-  color: #29da19;
+
+
+
+
+/*/////////////////////////////Barra de pesquisa////////////////////////////////*/
+
+.input-wrapper{
+  margin-top: 4%;
+  width: 70%;
+}
+.barraa{
+
+  width: 20%;
 }
 
 
+/*///////////////////////////////////////////////////////////*/
 
+}
+/*/////////////////// TAMANHO TABLET //////////////////////*/
+@media only screen and (min-width: 480px) and (max-width: 1000px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .logoo {
+    width:150px;
+  }
   
+  #menu {
+    margin-top: 6%;
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  
+  }
+  
+  /*Barra de Pesquisa Começo*/
+  .input-wrapper input {
+    background-color: #eee;
+    margin-top: 2%;
+    width:10em;
+  }
 
+ 
+.carousel-item {
+  height: 400px;
+}
+
+
+.card {
+  width: 350px;
+  height: 420px;
+  padding: 1.2em;
+  padding-bottom: 0em;
+  font-family: 'Ruda', sans-serif
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 175, 82, 0.575);
+}
+
+
+.card.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+}
+
+.card .price {
+  position: absolute;
+  left: 45%;
+  top: 1em;
+  bottom: 2em;
+  color: #300c0c;
+  font-size: 1.2em;
+}
+
+
+.image {
+  /* background: rgb(241, 241, 241); */
+  width: 70%;
+  height: 70%;
+  display: grid;
+  place-items: center;
+}
+
+.imagensCard {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.infoUsuario{
+  width: 90%;
+  padding: 2%;
+  margin: 0 auto;
+  margin-top: 3%;
+  background: #d0e9dd;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 15px 15px 30px #bebebe,
+  -15px -15px 30px #9b9797;
+}
+
+.modelo{display: none;
+}
+
+/* -----------------  Banner VERDE DE INFORMAÇÕES - HOME */
+.informacoesHome{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.bannerInfor1img {
+  margin: 0 auto;
+  width: 550px;
+  height: 200px;
+
+}
+.bannerInfor2img {
+  margin: 0 auto;
+  width: 550px;
+  height: 270px;
+  padding: 1%;
+}
+
+.bannerfixo1{
+  width: 100%;
+  height: 500px;
+}
+.bannerfixo2{
+  border-radius: 20px;
+  width: 75%;
+  height: 300px;
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+
+.task {
+  width: 70%;
+}
+
+
+.inputFormSobre{
+  width: 100%;
+ }
+ 
 }
