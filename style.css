@@ -651,12 +651,11 @@ footer {
 
 
 
-
-/* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
-
+/* /////////////////////////// Página produto sozinho //////////////////////// */
 #imagemProduto{
 
   display: none;
+ 
 }
 #botao {
   background-color: transparent;
@@ -747,9 +746,9 @@ footer {
 .descricao-produto{
   text-align: center;
   width: 70%;
-  font-size: 1.1em;
-  padding: 2%;
-  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  padding: 10%;
+
   font-family: 'Raleway', sans-serif;
 }
 .produto:hover{
@@ -850,6 +849,7 @@ footer {
 
 
 /* ////////////////////////////////////////////////// Fim Produtosss sozinho //////////////////////////////////////////////*/
+
 
 
 
@@ -1205,59 +1205,59 @@ table{
   /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
 
 
-  #imagemProduto{
+  /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
 
-    display: none;
-  }
+
+
 
   #valorFrete{
     color: #042c01;
-    font-family: 'Antonio', sans-serif;
+    font-family: 'Karla', sans-serif;
   
-  }
+  }.produtoPage{
 
-  .produtoPage{
+  display: none;
+
+}
+
+
+
+#imagemProduto{
+
+  display: block;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: 16%;
+}
+.descricao-produto{
+text-align: center;
+margin-left: 19%;
+/* border: 2px solid black; */
+font-family: 'Karla', sans-serif;
+font-size: 15px;
+}
+
+.ladoDireito{
+
  
-    width: 80%;
-  }
-  .produtoPage2{
-    display:fle;
-  
-  }
-  .produto-titulo{
-    font-family: 'Raleway', sans-serif;
-    color: rgb(60, 65, 60); 
-    text-shadow:  rgba(37, 36, 36, 0.644) 0.1em 0.1em 0.2em;
-    text-align:left;
-    font-size: 2em;
-  }
-  .descricao-produto{
-    text-align: center;
-    width: 80%;
-    font-size: 1.1em;
-    padding: 2%;
-    margin-left: 5%;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Raleway', sans-serif;
-  }
-  .ladoDireito{
-    margin-top: 2%;
-    /* border: 2px solid black; */
-    width: 50%;
-    margin-left: 10%;
-  }
-  .completoPage{
-    /* border: 2px solid black; */
-    display: flex;
-    margin-left: 5%;
-    width: 80%;
-  }
-  
-  .produtoTexto{
-    font-family: 'Edu NSW ACT Foundation', cursive;
-    font-size: 40px;
-  
-  }
+  width: 100%;
+  margin-right: 10%;
+  /* border: 2px solid black; */
+
+}
+.completoPage{
+  /* border: 2px solid black; */
+
+  display: flex;
+  width: 80%;
+}
+
+.produtoTexto{
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-size: 25px;
+
+}
 .corners { 
   background: #f6f6f673;
   height: 50px;
@@ -1270,18 +1270,7 @@ table{
   font-size: 18px;
   margin-right: 25%;
 }
-.idProduct{
-  color: #000;
-  font-size: 2em;
-}
-.realProduct{
-  color: #000;
-  font-size: 1em;
-}
-.realProduct{
-  color: #000;
-  font-size: 2em;
-}
+
 /* Corner Effect */
 .corners:after,
 .corners:before {
@@ -1310,10 +1299,49 @@ table{
 
 
 #botao {
+
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
   border-radius: 0.9375em;
-  margin:0 auto;
-  width: 40%;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  margin-left: 17%;
+  width: 60%;
   margin-top: 10%;
+ }
+ 
+ #botao:disabled {
+  pointer-events: none;
+ }
+ 
+ #botao:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ #botao:active {
+  box-shadow: none;
+  transform: translateY(0);
  }
  .linha{
   display: flex;
@@ -1548,5 +1576,193 @@ input:valid~label {
 .inputFormSobre{
   width: 100%;
  }
+
+
+
+
+ #valorFrete{
+  color: #042c01;
+  font-family: 'Karla', sans-serif;
+
+}.produtoPage{
+
+display: none;
+
+}
+
+
+
+#imagemProduto{
+
+display: block;
+width: 80%;
+display: flex;
+justify-content: center;
+margin-left: 16%;
+}
+.descricao-produto{
+text-align: center;
+margin-left: 19%;
+/* border: 2px solid black; */
+font-family: 'Karla', sans-serif;
+font-size: 15px;
+}
+
+.ladoDireito{
+
+
+width: 100%;
+margin-right: 10%;
+/* border: 2px solid black; */
+
+}
+.completoPage{
+/* border: 2px solid black; */
+
+display: flex;
+width: 80%;
+}
+
+.produtoTexto{
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-size: 25px;
+
+}
+.corners { 
+background: #f6f6f673;
+height: 50px;
+margin: 50px auto;
+max-width: 200px;
+position: relative;
+width: 50%;
+box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-size: 18px;
+margin-right: 25%;
+}
+
+/* Corner Effect */
+.corners:after,
+.corners:before {
+background: #0297341f;
+content: '';
+height: 31px;
+position: absolute;
+top: -7px;
+width: 55px;
+box-shadow: 0 5px 10px -7px hsla(0, 0% ,0%, 0.5);
+}
+.corners:after {
+left: -50px;
+transform: rotate(-45deg);
+}
+.corners:before {
+right: -50px;
+transform: rotate(45deg);
+}
+.cent{
+display: flex;
+justify-content: left;
+
+
+}
+
+
+#botao {
+
+appearance: none;
+background-color: transparent;
+border: 0.125em solid #1A1A1A;
+border-radius: 0.9375em;
+box-sizing: border-box;
+color: #3B3B3B;
+cursor: pointer;
+display: inline-block;
+font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 16px;
+font-weight: 600;
+line-height: normal;
+min-height: 3.75em;
+min-width: 0;
+outline: none;
+padding: 1em 2.3em;
+text-align: center;
+text-decoration: none;
+transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+will-change: transform;
+margin-left: 17%;
+width: 60%;
+margin-top: 10%;
+}
+
+#botao:disabled {
+pointer-events: none;
+}
+
+#botao:hover {
+color: #fff;
+background-color: #1A1A1A;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+#botao:active {
+box-shadow: none;
+transform: translateY(0);
+}
+.linha{
+display: flex;
+flex-direction: column;
+}
+
+
+
+/*///////////////////////////////////////////////////////*/
+
+
+
+.input-groupP {
+position: relative;
+}
+
+.inputP {
+border: 3px solid #000;
+background: none;
+padding: 1rem;
+font-size: 1rem;
+color: black;
+
+}
+
+.user-labelP {
+position: absolute;
+left: 15px;
+color: #000;
+pointer-events: none;
+transform: translateY(1rem);
+transition: 350ms;
+}
+
+.inputP:focus,
+inputP:valid {
+outline: none;
+--angle: 0deg;
+border-bottom: 3px solid;
+border-image: conic-gradient(from var(--angle), #2ae919, #2dad19, #70bf5f,#2ae919 , #9cf576) 1;
+animation: 3s rotate9234 linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
  
 }
