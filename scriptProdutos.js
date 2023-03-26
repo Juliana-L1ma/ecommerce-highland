@@ -86,7 +86,6 @@ fetch('produtos.json').then(response => response.json())
          var converValorProduto6 = convertidoValorProduto6.toFixed(2);
          document.getElementById("valorRealProduto6").innerHTML = "R$" + converValorProduto6;
 
-        
         })
 }
 )
@@ -223,5 +222,8 @@ document.getElementById("valorRealProduto11").innerHTML = "R$" + converValorProd
     }
     )
  
+    
 }
 )
+
+

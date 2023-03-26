@@ -1205,57 +1205,59 @@ table{
   /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
 
 
+  #imagemProduto{
 
+    display: none;
+  }
 
   #valorFrete{
     color: #042c01;
     font-family: 'Antonio', sans-serif;
   
-  }.produtoPage{
+  }
 
-  display: none;
-
-}
-
-
-
-#imagemProduto{
-
-  display: block;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  margin-left: 6%;
-}
-.produto-titulo{
-  font-size: 20px;
-  margin-top: 5%;
-}
-.descricao-produto{
-text-align: justify;
-width: 100%;
-font-family: 'Karla', sans-serif;
-font-size: 15px;
-}
-
-.ladoDireito{
-  width: 100%;
-  margin-right: 10%;
-  /* border: 2px solid black; */
-
-}
-.completoPage{
-  /* border: 2px solid black; */
-
-  display: flex;
-  width: 80%;
-}
-
-.produtoTexto{
-  font-family: 'Edu NSW ACT Foundation', cursive;
-  font-size: 25px;
-
-}
+  .produtoPage{
+ 
+    width: 80%;
+  }
+  .produtoPage2{
+    display:fle;
+  
+  }
+  .produto-titulo{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(60, 65, 60); 
+    text-shadow:  rgba(37, 36, 36, 0.644) 0.1em 0.1em 0.2em;
+    text-align:left;
+    font-size: 2em;
+  }
+  .descricao-produto{
+    text-align: center;
+    width: 80%;
+    font-size: 1.1em;
+    padding: 2%;
+    margin-left: 5%;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  .ladoDireito{
+    margin-top: 2%;
+    /* border: 2px solid black; */
+    width: 50%;
+    margin-left: 10%;
+  }
+  .completoPage{
+    /* border: 2px solid black; */
+    display: flex;
+    margin-left: 5%;
+    width: 80%;
+  }
+  
+  .produtoTexto{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 40px;
+  
+  }
 .corners { 
   background: #f6f6f673;
   height: 50px;
@@ -1268,7 +1270,18 @@ font-size: 15px;
   font-size: 18px;
   margin-right: 25%;
 }
-
+.idProduct{
+  color: #000;
+  font-size: 2em;
+}
+.realProduct{
+  color: #000;
+  font-size: 1em;
+}
+.realProduct{
+  color: #000;
+  font-size: 2em;
+}
 /* Corner Effect */
 .corners:after,
 .corners:before {
