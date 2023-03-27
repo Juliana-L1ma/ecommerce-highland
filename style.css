@@ -1202,7 +1202,6 @@ table{
 
 
 
-  /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
 
 
   /* ////////////////////////////////// Página do Produto Sozinho //////////////////////////////////////////////////////////////// */
@@ -1231,11 +1230,12 @@ table{
   margin-left: 16%;
 }
 .descricao-produto{
-text-align: center;
-margin-left: 19%;
+text-align:justify;
+margin-left: 6%;
 /* border: 2px solid black; */
 font-family: 'Karla', sans-serif;
-font-size: 15px;
+font-size: 14px;
+width: 100%;
 }
 
 .ladoDireito{
